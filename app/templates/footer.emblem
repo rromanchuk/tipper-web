@@ -1,0 +1,3 @@
+footer.footer
+  .container
+    = link-to 'privacy' | Privacy

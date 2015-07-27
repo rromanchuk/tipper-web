@@ -20,27 +20,41 @@ module.exports = {
   staging: {
     buildEnv: 'staging', // Override the environment passed to the ember asset build. Defaults to 'production'
     store: {
-      host: 'redis://tipper.7z2sws.0001.use1.cache.amazonaws.com',
-      port: 6379
+      type: 'redis',
+      host: 'tipper.7z2sws.0001.use1.cache.amazonaws.com',
+      port: 6379,
+      ssh: {
+        username: 'ec2-user',
+        privateKey: '/Users/ryan/rromanchuk-feb.pem',
+        host: 'coinbit.tips',
+        port: 22
+      }
     },
     assets: {
       accessKeyId: 'AKIAJ5C5NX4CZVSQOYKQ',
       secretAccessKey: process.env['AWS_ACCESS_KEY'],
-      bucket: 'tipperapp'
+      bucket: 'downloadtipper.com'
     },
     manifestPrefix: 'stage-app' // optional, defaults to this.project.name()
   },
 
    production: {
     store: {
-      host: 'redis://tipper.7z2sws.0001.use1.cache.amazonaws.com',
-      port: 6379,
-      password: '<your-redis-secret>'
+      type: 'redis',
+      ssh: {
+        username: 'ec2-user',
+        privateKey: '/Users/ryan/rromanchuk-feb.pem',
+        dstPort: 6379, // redis port
+        dstHost: 'tipper.7z2sws.0001.use1.cache.amazonaws.com', // redis host
+        username: 'ec2-user',
+        host: '54.173.214.35',
+        port: 22
+      }
     },
     assets: {
       accessKeyId: 'AKIAJ5C5NX4CZVSQOYKQ',
       secretAccessKey: process.env['AWS_ACCESS_KEY'],
-      bucket: 'tipperapp'
+      bucket: 'downloadtipper.com'
     }
   }
 };

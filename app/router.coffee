@@ -19,4 +19,6 @@ Router = Ember.Router.extend
 Router.map ->
   @resource 'user', path: 'users/:user_id', ->
 
+  @route 'privacy'
+
 `export default Router`

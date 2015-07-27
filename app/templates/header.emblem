@@ -1,0 +1,8 @@
+.row.header
+  .jumbotron.center-block
+    .row.center-block.marketing
+      h1 Tipper is a Bitcoin Wallet
+      h2 Send Micro Payments to real people for Digital Actions
+    .row
+      a href="https://itunes.apple.com/us/app/tipper-micro-payments/id986575823?ls=1&mt=8" 
+        img src="assets/images/download.svg"
