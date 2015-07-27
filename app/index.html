@@ -6,7 +6,6 @@
     <title>Tipper</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     {{content-for 'head'}}
 
     <link rel="stylesheet" href="assets/vendor.css">
@@ -19,6 +18,9 @@
 
     <script src="assets/vendor.js"></script>
     <script src="assets/tipper.js"></script>
+     <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
 
     {{content-for 'body-footer'}}
   </body>

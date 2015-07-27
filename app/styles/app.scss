@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Bariol';
+  src: url('/assets/fonts/Bariol.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Bariol", Times, serif;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+}
+
+footer {
+  height: 60px;
+  background-color: #f5f5f5;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  .container {
+    height: 100%;
+    a {
+      vertical-align: middle;
+      display: table-cell;
+      line-height: 60px;
+    }
+  }
+}
+
+.tweet-box {
+  padding-top: 20px;
+}
+
+
+.header {
+  img {
+    padding-left: 160px;
+    padding-top: 20px;
+  }
+  .jumbotron {
+    background-color: transparent;
+    background-image: url('/assets/images/logo.svg');
+    background-repeat: no-repeat;
+    background-position: left; 
+    width: 60%;
+    .marketing {
+      padding-left: 150px;
+    }
+  }
+  h1 {
+    font-size: 2.750em; 
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-top:0px;
+  }
+  color: white;
+  background-color: #6DBA94;
+  min-height: 300px;
+}
+
+.tweet-box {
+  font-size: 1.125em;
+  img {
+    padding-right: 30px;
+  }
+}
+
+.display-table {
+  display: table;
+  table-layout: fixed;
+}
+
+.display-cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+}
