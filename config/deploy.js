@@ -20,15 +20,13 @@ module.exports = {
   staging: {
     buildEnv: 'staging', // Override the environment passed to the ember asset build. Defaults to 'production'
     store: {
-      type: 'redis',
-      host: 'tipper.7z2sws.0001.use1.cache.amazonaws.com',
-      port: 6379,
-      ssh: {
-        username: 'ec2-user',
-        privateKey: '/Users/ryan/rromanchuk-feb.pem',
-        host: 'coinbit.tips',
-        port: 22
-      }
+      type: "S3",
+      accessKeyId: "AKIAJ5C5NX4CZVSQOYKQ",
+      secretAccessKey: process.env['AWS_ACCESS_KEY'],
+      bucket: "downloadtipper.com",
+      acl: 'public-read', //optional, e.g. 'public-read', if ACL is not configured, it is not sent
+      hostName: "downloadtipper.com.s3-website-us-east-1.amazonaws.com", // To be set with 'direct' indexMode
+      indexMode: "direct" // Optional: 'direct' or 'indirect', 'direct' is used by default.
     },
     assets: {
       accessKeyId: 'AKIAJ5C5NX4CZVSQOYKQ',
@@ -40,16 +38,13 @@ module.exports = {
 
    production: {
     store: {
-      type: 'redis',
-      ssh: {
-        username: 'ec2-user',
-        privateKey: '/Users/ryan/rromanchuk-feb.pem',
-        dstPort: 6379, // redis port
-        dstHost: 'tipper.7z2sws.0001.use1.cache.amazonaws.com', // redis host
-        username: 'ec2-user',
-        host: '54.173.214.35',
-        port: 22
-      }
+      type: "S3",
+      accessKeyId: "AKIAJ5C5NX4CZVSQOYKQ",
+      secretAccessKey: process.env['AWS_ACCESS_KEY'],
+      bucket: "downloadtipper.com",
+      acl: 'public-read', //optional, e.g. 'public-read', if ACL is not configured, it is not sent
+      hostName: "downloadtipper.com.s3-website-us-east-1.amazonaws.com", // To be set with 'direct' indexMode
+      indexMode: "direct" // Optional: 'direct' or 'indirect', 'direct' is used by default.
     },
     assets: {
       accessKeyId: 'AKIAJ5C5NX4CZVSQOYKQ',
