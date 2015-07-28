@@ -49,7 +49,8 @@ module.exports = {
     assets: {
       accessKeyId: 'AKIAJ5C5NX4CZVSQOYKQ',
       secretAccessKey: process.env['AWS_ACCESS_KEY'],
-      bucket: 'downloadtipper.com'
+      bucket: 'downloadtipper.com',
+      exclude: ['.DS_Store']
     }
   }
 };
