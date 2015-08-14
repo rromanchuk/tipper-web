@@ -1,10 +1,7 @@
 .row
 .row.tweet-box
   .col-md-4
-    img.img-responsive.pull-right src="assets/images/phone.jpg"
   .col-md-7
-    p Tipper answers the biggest question for the average Bitcoin user: "What do I do with it?"
-    p Users are able to quickly load a Bitcoin wallet and begin sending Micro Payments between real people for digital actions taken on other networks like Twitter
     == tweet-timeline
 
 == outlet

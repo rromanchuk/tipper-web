@@ -1,8 +1,40 @@
+
 .row.header
-  .jumbotron.center-block
-    .row.center-block.marketing
-      h1 Tipper is a Bitcoin Wallet
-      h2 Send Micro Payments to real people for Digital Actions
+  .row
+    .col-md-12
+      ul.nav.navbar-nav
+        li 
+          a.navbar-brand href="#" Tipper
+      ul.nav.navbar-nav.navbar-right
+        li 
+          a href="#" About
+        li 
+          link-to 'privacy' | Privacy
+        li
+          a href="#" FAQ
+  .col-md-4
+    img#phone-preview.img-responsive.pull-right src="assets/images/splash-phone.png"
+  .col-md-6
+    img#header-logo.pull-left src="assets/images/tipper-logo-header.png"
+    .row.header-text
+      h1 Tipper
+      h2 The Bitcoin wallet that sends Micro Payments to real people for digital actions.
     .row
-      a href="https://itunes.apple.com/us/app/tipper-micro-payments/id986575823?ls=1&mt=8" 
-        img src="assets/images/download.svg"
+      a#download-link href="https://itunes.apple.com/us/app/tipper-micro-payments/id986575823?ls=1&mt=8" 
+        img#download-ios src="assets/images/download.svg" height="60" width="200"
+      form#text-me-link-form.form-inline
+        .form-group
+          input type="text" class="form-control" placeholder="Enter your phone number"
+        button.btn.btn-default type="submit" Text me link
+  / .jumbotron.center-block
+  /   .row.center-block.marketing
+  /     img.pull-left src="assets/images/tipper-logo-header.png"
+  /     .row.header-text
+  /       h1 Tipper
+  /       h2 The Bitcoin wallet that sends Micro Payments to real people for digital actions.
+    .row.center-block
+      
+    .row
+      
+
+
