@@ -16,7 +16,7 @@ module.exports = function(environment) {
       'default-src': "'self' 'unsafe-inline' *.twitter.com *.twimg.com",
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval' *.twitter.com *.twimg.com", // Allow scripts from https://cdn.mxpnl.com
       // 'font-src': "'self' http://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
-      // 'connect-src': "'self' https://api.mixpanel.com http://custom-api.local", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
+      'connect-src': "'self' 'unsafe-inline' *.coinbit.tips", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
       'img-src': "'self' 'unsafe-inline' *.twitter.com *.twimg.com data:",
       'style-src': "'self' 'unsafe-inline' *.twitter.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com 
       'media-src': "'self' 'unsafe-inline' *.twitter.com"
