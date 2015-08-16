@@ -13,13 +13,14 @@ module.exports = function(environment) {
       }
     },
     contentSecurityPolicy: {
-      'default-src': "'self' 'unsafe-inline' *.twitter.com *.twimg.com",
-      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' *.twitter.com *.twimg.com", // Allow scripts from https://cdn.mxpnl.com
+      'default-src': "'self' 'unsafe-inline' https://*.twiiter.com http://*.twitter.com *.twimg.com",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' https://cdn.syndication.twimg.com https://*.twitter.com http://*.twitter.com https://cdn.twitter.com *.twimg.com syndication.twitter.com", // Allow scripts from https://cdn.mxpnl.com
       // 'font-src': "'self' http://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
       // 'connect-src': "'self' https://api.mixpanel.com http://custom-api.local", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
-      'img-src': "'self' 'unsafe-inline' *.twitter.com *.twimg.com data:",
+      'img-src': "'self' 'unsafe-inline' syndication.twitter.com https://*.twitter.com https://pbs.twimg.com data:",
       'style-src': "'self' 'unsafe-inline' *.twitter.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com 
-      'media-src': "'self' 'unsafe-inline' *.twitter.com"
+      'media-src': "'self' 'unsafe-inline' *.twitter.com",
+      'frame-src': "https://*.twitter.com syndication.twitter.com"
     },
 
     APP: {
@@ -27,7 +28,6 @@ module.exports = function(environment) {
       // when it is created
     }
   };
-
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

@@ -7,9 +7,10 @@ module.exports = function(defaults) {
     fingerprint: {
      prepend: 'https://d2y3ij3q9p2pn9.cloudfront.net/'
    }
-  });
-  app.import('bower_components/bootstrap/dist/css/bootstrap.css');
 
+  });
+  
+  //app.import('bower_components/bootstrap/dist/css/bootstrap.css');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
