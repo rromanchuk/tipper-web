@@ -1,7 +1,7 @@
     
 .row.header
   .col-lg-3#phone-preview.center-block.visible-lg-block
-    img.img-responsive.pull-right src="assets/images/splash-phone.png"
+    img.img-responsive.pull-right src="assets/images/splash-phone.png" width="331" height="689"
   .col-lg-6.col-md-6.center-block
     img#header-logo.pull-left src="assets/images/tipper-logo-header.png"
     .row.header-text
