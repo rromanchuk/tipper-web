@@ -6,7 +6,7 @@ nav.navbar.navbar-default.tipper-nav
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand Tipper
+      link-to 'index' class="navbar-brand" | Tipper 
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         / li

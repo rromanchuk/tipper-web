@@ -2,6 +2,7 @@
 
 ApplicationAdapter = DS.RESTAdapter.extend(
   host: 'https://coinbit.tips'
+  headers: "X-CSRF-Token": $('meta[name="csrf-token"]').attr('content')
   ajax: (url, method, hash) ->
     hash = hash or {}
     # hash may be undefined
