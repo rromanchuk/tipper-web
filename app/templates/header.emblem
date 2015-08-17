@@ -15,9 +15,8 @@
         form#text-me-link-form
           input type="text" class="form-control" placeholder="Enter your phone number"
           button.btn.btn-default{action "sendSms"} type="submit" Text me a link
-    .row.center-block
-      
     .row
       
+
 
 

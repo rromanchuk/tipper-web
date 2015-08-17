@@ -78,11 +78,15 @@ body {
     height: 60px;
     background-color: #63A082;
     color: #FFFFFF;
-    width: 20%;
+    width: 40%;
+    /* Text me a link: */
+    font-family: HelveticaNeue-Light;
+    font-size: 20px;
+    line-height: 24px;
   }
   input {
     height: 60px; 
-    width: 60%;
+    width: 50%;
     margin-right: 10px;
     display: inline-block;
   }
@@ -90,25 +94,8 @@ body {
 }
 
 
-.tweet-box {
-  font-size: 1.125em;
-  img {
-    padding-right: 30px;
-  }
-}
-
-.display-table {
-  display: table;
-  table-layout: fixed;
-}
-
-.display-cell {
-  display: table-cell;
-  vertical-align: middle;
-  text-align:center;
-}
-
 
 form#text-me-link-form {
   display: inline;
 }
+
