@@ -54,7 +54,7 @@ module.exports = {
       gzipExtensions: ['js', 'css', 'svg'],
       accessKeyId: 'AKIAJ5C5NX4CZVSQOYKQ',
       secretAccessKey: process.env['AWS_ACCESS_KEY'],
-      bucket: 'downloadtipper.com',
+      bucket: 'tipper-assets',
       exclude: ['.DS_Store']
     }
   }

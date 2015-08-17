@@ -5,7 +5,7 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
     fingerprint: {
-     prepend: 'https://d2y3ij3q9p2pn9.cloudfront.net/',
+     prepend: 'https://d2van23dea75yy.cloudfront.net/',
      extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map', 'svg']
    }
 
