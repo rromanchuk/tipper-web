@@ -10,7 +10,7 @@ module.exports = function(defaults) {
 
   });
   
-  //app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+  //app.import('bower_components/twilio/twilio.js');
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
