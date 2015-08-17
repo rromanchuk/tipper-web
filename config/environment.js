@@ -28,6 +28,11 @@ module.exports = function(environment) {
       // when it is created
     }
   };
+
+  ENV.TWILIO_ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID
+  ENV.TWILIO_AUTH_TOKEN = process.env.TWILIO_AUTH_TOKEN
+
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;

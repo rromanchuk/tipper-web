@@ -1,15 +1,12 @@
 `import Ember from 'ember'`
 `import Twilio from 'npm:twilio'`
+`import ENV from 'tipper/config/environment'`
 
 ApplicationController = Ember.Controller.extend(
 	actions:
     sendSms: ->
-      console.log("sendSms")
-      accountSid = 'ACa3463749fd3116fda1da513059112541'
-      authToken = '***REMOVED***'
-      console.log(Twilio)
-      client = Twilio(accountSid, authToken)
-      console.log(client)
+      console.log("sendSms");
+      client = Twilio(ENV.TWILIO_ACCOUNT_SID, ENV.TWILIO_AUTH_TOKEN);
       client.sendMessage {
         to: '+16502438594'
         from: '+16504198197'
