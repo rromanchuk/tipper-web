@@ -15,7 +15,7 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'default-src': "'self' 'unsafe-inline' https://*.twiiter.com http://*.twitter.com *.twimg.com",
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval' https://cdn.syndication.twimg.com https://*.twitter.com http://*.twitter.com https://cdn.twitter.com *.twimg.com syndication.twitter.com", // Allow scripts from https://cdn.mxpnl.com
-      // 'font-src': "'self' http://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
+      'font-src': "'self' d2van23dea75yy.cloudfront.net", // Allow fonts to be loaded from http://fonts.gstatic.com
       'connect-src': "'self' https://api.twilio.com", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
       'img-src': "'self' 'unsafe-inline' syndication.twitter.com https://*.twitter.com https://pbs.twimg.com data:",
       'style-src': "'self' 'unsafe-inline' *.twitter.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com 
