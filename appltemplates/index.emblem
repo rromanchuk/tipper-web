@@ -1,0 +1,7 @@
+.row
+.row.tweet-box
+  .col-md-4
+  .col-md-7
+    == tweet-timeline
+
+== outlet
