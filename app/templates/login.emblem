@@ -1,0 +1,8 @@
+== outlet
+.row
+  .col-lg-7.center-block
+    if session.isAuthenticated
+      p Logged in
+    else
+      p Logged out
+      a click="signInViaTwitter" Sign in

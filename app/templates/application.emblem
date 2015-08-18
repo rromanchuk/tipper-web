@@ -15,5 +15,6 @@ nav.navbar.navbar-default.tipper-nav
           link-to 'privacy' | Privacy
 .container-fluid
   == partial "header"
+  
   == outlet
   == partial "footer"
