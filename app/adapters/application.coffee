@@ -1,7 +1,7 @@
 `import DS from 'ember-data'`
 
 ApplicationAdapter = DS.RESTAdapter.extend(
-  host: 'https://coinbit.tips'
+  host: 'https://www.downloadtipper.com'
   headers: "X-CSRF-Token": $('meta[name="csrf-token"]').attr('content')
   ajax: (url, method, hash) ->
     hash = hash or {}
