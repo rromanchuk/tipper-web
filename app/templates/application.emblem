@@ -9,8 +9,8 @@ nav.navbar.navbar-default.tipper-nav
       link-to 'index' class="navbar-brand" | Tipper 
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
-        / li
-        /   a href="#" About
+        li
+          link-to 'login' | Login
         li
           link-to 'privacy' | Privacy
 .container-fluid
