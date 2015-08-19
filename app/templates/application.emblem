@@ -9,8 +9,12 @@ nav.navbar.navbar-default.tipper-nav
       link-to 'index' class="navbar-brand" | Tipper 
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
-        li
-          a click="signInViaTwitter" Login
+        if session.isAuthenticated
+          li
+            = session.currentUser.twitterUsername
+        else
+          li
+            a click="signInViaTwitter" Login
         li
           link-to 'privacy' | Privacy
 .container-fluid
