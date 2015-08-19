@@ -33,4 +33,6 @@ App = Ember.Application.extend
 
 loadInitializers(App, config.modulePrefix)
 
+Ember.Inflector.inflector.irregular('me', 'me')
+
 `export default App`
