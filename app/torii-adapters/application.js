@@ -13,7 +13,7 @@ export default Ember.Object.extend({
     adapter.set('headers', { 'Authorization': localStorage.token });
     console.log(adapter)
 
-    return this.get('store').find('user', 'me').then(function(user) {
+    return this.get('store').find('me').then(function(user) {
       return {
         currentUser: user
       };
@@ -29,7 +29,7 @@ export default Ember.Object.extend({
     var adapter = this.container.lookup('adapter:application');
     adapter.set('headers', { 'Authorization': localStorage.token });
 
-    return this.get('store').find('user', 'me').then(function(user) {
+    return this.get('store').find('me').then(function(user) {
       return {
         currentUser: user
       };
