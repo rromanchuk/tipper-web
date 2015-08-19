@@ -12,11 +12,12 @@ export default Ember.Object.extend({
     console.log(pieces);
     var bufferString = pieces[0] + ":" + pieces[1];
     var authorizationHeader = btoa(bufferString);
+    localStorage.authorizationHeader = "Basic " + authorizationHeader;
     //adapter.set('headers', { 'Authorization': "Basic " + authorizationHeader });
 
     console.log(localStorage)
-    var adapter = this.container.lookup('adapter:application');
-    adapter.set('headers', { 'Authorization': "Basic " + authorizationHeader });
+    //var adapter = this.container.lookup('adapter:application');
+    //adapter.set('headers', { 'Authorization': "Basic " + authorizationHeader });
 
     //adapter.set('headers', { 'Authorization': localStorage.token });
     console.log(adapter)
