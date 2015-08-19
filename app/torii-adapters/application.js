@@ -8,9 +8,17 @@ export default Ember.Object.extend({
 
     localStorage.token = auth.code;
 
+    var pieces = auth.code.split("-");
+    console.log(pieces);
+    var bufferString = pieces[0] + ":" + pieces[1];
+    var authorizationHeader = new Buffer(bufferString).toString('base64');
+    //adapter.set('headers', { 'Authorization': "Basic " + authorizationHeader });
+
     console.log(localStorage)
     var adapter = this.container.lookup('adapter:application');
-    adapter.set('headers', { 'Authorization': localStorage.token });
+    adapter.set('headers', { 'Authorization': "Basic " + authorizationHeader });
+
+    //adapter.set('headers', { 'Authorization': localStorage.token });
     console.log(adapter)
 
     return this.get('store').find('me').then(function(user) {
