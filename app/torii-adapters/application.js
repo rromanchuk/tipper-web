@@ -11,7 +11,7 @@ export default Ember.Object.extend({
     var pieces = auth.code.split("-");
     console.log(pieces);
     var bufferString = pieces[0] + ":" + pieces[1];
-    var authorizationHeader = new Buffer(bufferString).toString('base64');
+    var authorizationHeader = btoa(bufferString);
     //adapter.set('headers', { 'Authorization': "Basic " + authorizationHeader });
 
     console.log(localStorage)
