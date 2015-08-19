@@ -1,5 +1,6 @@
 export default Ember.Object.extend({
   open: function(auth) {
+    console.log("open: " + auth);
     if (!auth.code) {
       return rejectPromise();
     }
