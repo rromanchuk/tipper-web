@@ -5,7 +5,7 @@ ApplicationAdapter = DS.RESTAdapter.extend(
   headers: {
     'Authorization': localStorage.authorizationHeader
     "X-CSRF-Token": $('meta[name="csrf-token"]').attr('content')
-  }.property().volatile()
+  }.volatile()
   # ajax: (url, method, hash) ->
   #   hash = hash or {}
   #   # hash may be undefined
