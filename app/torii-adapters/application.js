@@ -1,19 +1,15 @@
 export default Ember.Object.extend({
   open: function(auth) {
-    console.log("open: ");
-    console.log(auth);
+    console.log("open")
+    console.log(auth)
     if (!auth.code) {
       return rejectPromise();
     }
 
     localStorage.token = auth.code;
-    localStorage.uid = auth.uid;
-    var bufferString = auth.uid + ":" + auth.uid;
-    var authorizationHeader = new Buffer(bufferString).toString('base64');
     var adapter = this.container.lookup('adapter:application');
-    //adapter.set('headers', { 'Authorization': "Basic " + authorizationHeader });
-
     adapter.set('headers', { 'Authorization': localStorage.token });
+
     return this.get('store').find('user', 'me').then(function(user) {
       return {
         currentUser: user
@@ -22,6 +18,7 @@ export default Ember.Object.extend({
   },
 
   fetch: function() {
+    console.log("fetch")
     if (!localStorage.token) {
       return rejectPromise();
     }
@@ -37,6 +34,7 @@ export default Ember.Object.extend({
   },
 
   close: function() {
+    console.log("close")
     var authToken = localStorage.token;
 
     localStorage.token = null;
