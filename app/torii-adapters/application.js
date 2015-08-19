@@ -20,7 +20,7 @@ export default Ember.Object.extend({
     //adapter.set('headers', { 'Authorization': "Basic " + authorizationHeader });
 
     //adapter.set('headers', { 'Authorization': localStorage.token });
-    console.log(adapter)
+    //console.log(adapter)
 
     return this.get('store').find('me').then(function(user) {
       return {
