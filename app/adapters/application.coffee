@@ -8,6 +8,9 @@ ApplicationAdapter = DS.RESTAdapter.extend(
     @notifyPropertyChange key
     value
   host: "https://coinbit.tips"
+  serializer: DS.RESTSerializer.extend
+    extractDeleteRecord: (store, type, payload) ->
+      return null;
   headers: (->
     {
       'Authorization': @get("authorizationHeader")
