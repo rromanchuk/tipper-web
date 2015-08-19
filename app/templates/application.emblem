@@ -10,7 +10,7 @@ nav.navbar.navbar-default.tipper-nav
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li
-          link-to 'login' | Login
+          a click="signInViaTwitter" Login
         li
           link-to 'privacy' | Privacy
 .container-fluid
