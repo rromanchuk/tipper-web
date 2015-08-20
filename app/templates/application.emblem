@@ -18,7 +18,7 @@ nav.navbar.navbar-default.tipper-nav
         if session.isAuthenticated
           li
             / a = session.currentUser.get('twitterUsername')
-            a click='logout'
+            a click='logout' Logout
         else
           li
             a click="signInViaTwitter" Login
