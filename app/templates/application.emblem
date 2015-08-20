@@ -9,7 +9,11 @@ nav.navbar.navbar-default.tipper-nav
       link-to 'index' class="navbar-brand" | Tipper 
     #navbar.collapse.navbar-collapse
       = log session
+      = log session.currentUser
       ul.nav.navbar-nav.navbar-right
+        if session.isWorking
+          li
+            Logging in...
         if session.isAuthenticated
           li
             a = session.currentUser.twitterUsername
