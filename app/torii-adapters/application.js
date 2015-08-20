@@ -35,10 +35,8 @@ export default Ember.Object.extend({
       return rejectPromise();
     }
 
-    var adapter = this.container.lookup('adapter:application');
-    adapter.set('headers', { 'Authorization': localStorage.token });
-
     return this.get('store').find('me').then(function(user) {
+      console.log(user)
       return {
         currentUser: user
       };
