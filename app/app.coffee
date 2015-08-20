@@ -32,6 +32,7 @@ App = Ember.Application.extend
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
   Resolver: Resolver
+  LOG_TRANSITIONS: true
 
 loadInitializers(App, config.modulePrefix)
 
