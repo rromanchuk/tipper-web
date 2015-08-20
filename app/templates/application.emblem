@@ -10,6 +10,7 @@ nav.navbar.navbar-default.tipper-nav
     #navbar.collapse.navbar-collapse
       = log session
       = log session.currentUser
+      = log session.currentUser.twitterUsername
       ul.nav.navbar-nav.navbar-right
         if session.isWorking
           li
