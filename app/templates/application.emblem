@@ -12,7 +12,7 @@ nav.navbar.navbar-default.tipper-nav
       ul.nav.navbar-nav.navbar-right
         if session.isAuthenticated
           li
-            a session.currentUser.twitterUsername
+            a = session.currentUser.twitterUsername
         else
           li
             a click="signInViaTwitter" Login
