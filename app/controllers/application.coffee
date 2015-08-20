@@ -1,5 +1,4 @@
 `import Ember from 'ember'`
-`import Twilio from 'npm:twilio'`
 `import ENV from 'tipper/config/environment'`
 
 ApplicationController = Ember.Controller.extend(
