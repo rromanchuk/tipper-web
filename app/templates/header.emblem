@@ -14,7 +14,7 @@
           img#download-ios.img-responsive src="assets/images/download.svg" height="60" width="200"
       .col-lg-8.col-md-8.visible-lg-block.visible-md-block
         form#text-me-link-form
-          input type="text" class="form-control" placeholder="Enter your phone number"
+          = input type="text" class="form-control" placeholder="Enter your phone number" value=model.sms.to
           button.btn.btn-default{action "sendSms"} type="submit" Text me a link
     .row
       

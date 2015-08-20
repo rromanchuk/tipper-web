@@ -1,6 +1,10 @@
 `import Ember from 'ember'`
 
 ApplicationRoute = Ember.Route.extend(
+  model: ->
+    Ember.RSVP.hash
+      sms: @store.createRecord 'sms'
+        # to: '16502438594'
   beforeModel: ->
     @get('session').fetch().then (->
       console.log 'Session was fetched'

@@ -17,7 +17,7 @@ nav.navbar.navbar-default.tipper-nav
             Logging in...
         if session.isAuthenticated
           li
-            Hello, @#{session.currentUser.twitterUsername}.
+            a href='#' | Hello, @#{session.currentUser.twitterUsername}.
             /a click='logout' Logout
         else
           li
