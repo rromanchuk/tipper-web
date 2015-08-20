@@ -22,10 +22,10 @@ export default Ember.Object.extend({
     //adapter.set('headers', { 'Authorization': localStorage.token });
     //console.log(adapter)
 
-    return this.get('store').find('me').then(function(user) {
-      self.set('session.currentUser', user);
+    return this.get('store').find('me').then(function(me) {
+      me.get('twitterUsername')
       return {
-        currentUser: user
+        currentUser: me
       };
     });
   },
@@ -36,11 +36,10 @@ export default Ember.Object.extend({
       return rejectPromise();
     }
 
-    return this.get('store').find('me').then(function(user) {
-      console.log(user)
-      self.set('session.currentUser', user);
+    return this.get('store').find('me').then(function(me) {
+      console.log(me.get('twitterUsername'))
       return {
-        currentUser: user
+        currentUser: me
       };
     });
   },
