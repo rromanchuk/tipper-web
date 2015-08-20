@@ -22,7 +22,7 @@ export default Ember.Object.extend({
     //adapter.set('headers', { 'Authorization': localStorage.token });
     //console.log(adapter)
 
-    return this.get('store').find('me').then(function(me) {
+    return this.get('store').find('me', 'refresh').then(function(me) {
       me.get('twitterUsername')
       return {
         currentUser: me
@@ -36,7 +36,7 @@ export default Ember.Object.extend({
       return rejectPromise();
     }
 
-    return this.get('store').find('me').then(function(me) {
+    return this.get('store').find('me', 'refresh').then(function(me) {
       console.log(me.get('twitterUsername'))
       return {
         currentUser: me
