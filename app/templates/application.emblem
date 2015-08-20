@@ -8,10 +8,11 @@ nav.navbar.navbar-default.tipper-nav
         span.icon-bar
       link-to 'index' class="navbar-brand" | Tipper 
     #navbar.collapse.navbar-collapse
+      = log session
       ul.nav.navbar-nav.navbar-right
         if session.isAuthenticated
           li
-            = session.currentUser.twitterUsername
+            a session.currentUser.twitterUsername
         else
           li
             a click="signInViaTwitter" Login
