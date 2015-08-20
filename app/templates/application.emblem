@@ -10,14 +10,14 @@ nav.navbar.navbar-default.tipper-nav
     #navbar.collapse.navbar-collapse
       = log session
       = log session.currentUser
-      = log session.currentUser.twitterUsername
+      = log session.currentUser.get('twitterUsername')
       ul.nav.navbar-nav.navbar-right
         if session.isWorking
           li
             Logging in...
         if session.isAuthenticated
           li
-            a = session.currentUser.twitterUsername
+            a = session.currentUser.get('twitterUsername')
         else
           li
             a click="signInViaTwitter" Login
