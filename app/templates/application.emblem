@@ -10,17 +10,18 @@ nav.navbar.navbar-default.tipper-nav
     #navbar.collapse.navbar-collapse
       = log session
       = log session.currentUser
-      = log session.currentUser.get('twitterUsername')
+      = log session.currentUser.twitterUsername
       ul.nav.navbar-nav.navbar-right
-        / if session.isWorking
-        /   li
-        /     Logging in...
-        / if session.isAuthenticated
-        /   li
-        /     a = session.currentUser.get('twitterUsername')
-        / else
-        /   li
-        /     a click="signInViaTwitter" Login
+        if session.isWorking
+          li
+            Logging in...
+        if session.isAuthenticated
+          li
+            / a = session.currentUser.get('twitterUsername')
+            a click='logout'
+        else
+          li
+            a click="signInViaTwitter" Login
         li
           link-to 'privacy' | Privacy
 .container-fluid
