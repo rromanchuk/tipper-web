@@ -23,6 +23,7 @@ export default Ember.Object.extend({
     //console.log(adapter)
 
     return this.get('store').find('me').then(function(user) {
+      self.set('session.currentUser', user);
       return {
         currentUser: user
       };
@@ -37,6 +38,7 @@ export default Ember.Object.extend({
 
     return this.get('store').find('me').then(function(user) {
       console.log(user)
+      self.set('session.currentUser', user);
       return {
         currentUser: user
       };
