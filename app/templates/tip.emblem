@@ -1,1 +1,8 @@
+.row
+  .col-lg-6.center-block
+    img.image-circle src=model.fromTwitterProfileImage
+    span #{model.fromTwitterUsername} tipped 
+    img.image-cricle src=moddel.toTwitterProfileImage
+    span #{model.toTwitterUsername}
+
 == outlet

@@ -6,6 +6,8 @@ Tip = DS.Model.extend {
   toTwitterUserId: DS.attr('string')
   fromTwitterUsername: DS.attr('string')
   toTwitterUsername: DS.attr('string')
+  toTwitterProfileImage: DS.attr('string')
+  fromTwitterProfileImage: DS.attr('string')
 }
 
 `export default Tip`
