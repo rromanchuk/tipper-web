@@ -2,8 +2,8 @@
 
 Tip = DS.Model.extend {
   txid: DS.attr('string')
-  fromTwitterUserId: DS.attr('string')
-  toTwitterUserId: DS.attr('string')
+  fromTwitterId: DS.attr('string')
+  toTwitterId: DS.attr('string')
   fromTwitterUsername: DS.attr('string')
   toTwitterUsername: DS.attr('string')
   toTwitterProfileImage: DS.attr('string')

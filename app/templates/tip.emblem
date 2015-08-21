@@ -2,7 +2,7 @@
   .col-lg-6.center-block
     img.image-circle src=model.fromTwitterProfileImage
     span #{model.fromTwitterUsername} tipped 
-    img.image-cricle src=moddel.toTwitterProfileImage
+    img.image-cricle src=model.toTwitterProfileImage
     span #{model.toTwitterUsername}
 
     = component tweet-embed tweetId=model.objectId
