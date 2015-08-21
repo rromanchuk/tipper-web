@@ -16,9 +16,12 @@ nav.navbar.navbar-default.tipper-nav
           li
             Logging in...
         if session.isAuthenticated
-          li
-            a href='#' Hello, @#{session.currentUser.twitterUsername}.
-            /a click='logout' Logout
+          li.dropdown
+            a.dropdown-toggle href='#' data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" Hello, @#{session.currentUser.twitterUsername}.
+              span.caret
+            ul.dropdown-menu
+              li
+                a href="#" Logout
         else
           li
             a click="signInViaTwitter" Login
