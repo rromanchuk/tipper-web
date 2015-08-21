@@ -2,6 +2,7 @@
 
 TweetTimelineComponent = Ember.Component.extend(
   didInsertElement: ->
+    twttr.widgets.load()
     # console.log("TweetTimelineComponent::didInsertElement")
     # !((d, s, id) ->
     #   js = undefined
