@@ -1,8 +1,8 @@
-.row
+.row.transaction-card
   .col-lg-6.center-block
-    img.image-circle src=model.fromTwitterProfileImage
+    img.img-circle src=model.fromTwitterProfileImage
     span #{model.fromTwitterUsername} tipped 
-    img.image-cricle src=model.toTwitterProfileImage
+    img.img-cricle src=model.toTwitterProfileImage
     span #{model.toTwitterUsername}
 
     == tweet-embed tweetId=model.objectId
