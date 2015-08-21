@@ -1,11 +1,17 @@
 .row.transaction-card
   .col-lg-6.center-block
-    img.img-circle src=model.fromTwitterProfileImage
-    span #{model.fromTwitterUsername} tipped 
-    img.img-cricle src=model.toTwitterProfileImage
-    span #{model.toTwitterUsername}
+    .section
+      img.img-circle src=model.fromTwitterProfileImage
+      span #{model.fromTwitterUsername} tipped 
+      img.img-cricle src=model.toTwitterProfileImage
+      span #{model.toTwitterUsername}
+    .section
+      h3 Tip trigger:
+      == tweet-embed tweetId=model.objectId
+    .section
+      h3 Bockchain data
+      == blockchain-data
 
-    == tweet-embed tweetId=model.objectId
 
 == outlet
 
