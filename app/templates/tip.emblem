@@ -5,7 +5,7 @@
     img.image-cricle src=model.toTwitterProfileImage
     span #{model.toTwitterUsername}
 
-    = component tweet-embed tweetId=model.objectId
+    == component tweet-embed tweetId=model.objectId
 
 == outlet
 
