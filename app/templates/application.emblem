@@ -8,9 +8,6 @@ nav.navbar.navbar-default.tipper-nav
         span.icon-bar
       link-to 'index' class="navbar-brand" | Tipper 
     #navbar.collapse.navbar-collapse
-      = log session
-      = log session.currentUser
-      = log session.currentUser.twitterUsername
       ul.nav.navbar-nav.navbar-right
         if session.isWorking
           li
@@ -22,7 +19,7 @@ nav.navbar.navbar-default.tipper-nav
               span.caret
             ul.dropdown-menu
               li
-                a href="#" Logout
+                a click="logout" Logout
         else
           li
             a click="signInViaTwitter" Login
@@ -32,3 +29,5 @@ nav.navbar.navbar-default.tipper-nav
   == partial "header"
   == outlet
   == partial "footer"
+
+== happyfox-chat
