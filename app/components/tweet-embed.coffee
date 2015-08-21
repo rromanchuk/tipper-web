@@ -1,7 +1,6 @@
 `import Ember from 'ember'`
 
 TweetEmbedComponent = Ember.Component.extend(
-  positionalParams: ['tweetId']
   didInsertElement: ->
     console.log "TweetEmbedComponent::didInsertElement"
     console.log @get('tweetId')
