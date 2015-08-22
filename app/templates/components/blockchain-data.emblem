@@ -1,31 +1,30 @@
 table.table
   tr
     td
-      Size
+      | Size
     td
-      200kb
+      | 200kb
   tr
     td
-      Received Time
+      | Received Time
     td
-      blabh blab
+      | blabh blab
+  tr
+    td
+      | Included in blocks
+    td
+      | 394848933
+  tr
+    td
+      | Confirmations
+    td
+      | 322 Confirmations
+  tr
+    td
+      | Relayed by
+    td
+      | 234.33.432.33
 
-  tr
-    td
-      Included in blocks
-    td
-      394848933
-  tr
-    td
-      Confirmations
-    td
-      322 Confirmations
-  tr
-    td
-      Relayed by
-    td
-      234.33.432.33
-    
 
 
 == yield
