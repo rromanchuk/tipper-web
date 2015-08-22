@@ -1,5 +1,5 @@
-.row.transaction-card
-  .col-lg-6.center-block
+.row
+  .col-lg-6.center-block.transaction-card
     .section
       img.img-circle src=model.fromTwitterProfileImage
       span #{model.fromTwitterUsername} tipped 
