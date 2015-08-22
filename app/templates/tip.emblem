@@ -10,7 +10,7 @@
       == tweet-embed tweetId=model.objectId
     .section
       h3 Bockchain data
-      == blockchain-data
+      == blockchain-data blockchainData=model.transaction
 
 
 == outlet
