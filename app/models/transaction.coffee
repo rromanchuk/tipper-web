@@ -5,6 +5,7 @@ Transaction = DS.Model.extend {
   relayedBy: DS.attr('string')
   size: DS.attr('string')
   time: DS.attr('string')
+  tip: DS.belongsTo('tip')
 }
 
 `export default Transaction`
