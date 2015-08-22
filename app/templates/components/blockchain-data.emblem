@@ -2,8 +2,7 @@ table.table
   tr
     td
       | Size
-    td
-      | 200kb
+    td = blockchainData.size
   tr
     td
       | Received Time
@@ -22,8 +21,7 @@ table.table
   tr
     td
       | Relayed by
-    td
-      | 234.33.432.33
+    td = blockchainData.relayedBy
 
 
 
