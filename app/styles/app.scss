@@ -9,7 +9,7 @@
 
 .coiner {
   font-family: coiner; 
-  
+
 }
 
 body {
@@ -109,5 +109,10 @@ form#text-me-link-form {
 // TIP PAGE
 .transaction-card {
   background-color: white;
+  .tip-details {
+    .user {
+      padding-left: 10px;
+    }
+  }
 }
 
