@@ -21,14 +21,7 @@ Transaction = DS.Model.extend {
   detailsObject: Ember.computed('details', ->
     JSON.parse(@get('details'))
   )
-
-  outputsArr: Ember.computed('outputs', ->
-    JSON.parse(@get('outputs'))
-  )
-
-  inputsArr: Ember.computed('inputs', ->
-    JSON.parse(@get('inputs'))
-  )
+  
 }
 
 `export default Transaction`
