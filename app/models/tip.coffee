@@ -10,8 +10,8 @@ Tip = DS.Model.extend {
   fromTwitterProfileImage: DS.attr('string')
   objectId: DS.attr('string')
   transaction: DS.belongsTo('transaction', {async: true})
-  fromUser: DS.belongsTo('user', {async: true})
-  toUser: DS.belongsTo('user', {async: true})
+  fromUser: DS.belongsTo('user', {async: true, inverse: 'sentTips'})
+  toUser: DS.belongsTo('user', {async: true, inverse: 'receivedTips'})
   tippedAt: DS.attr('date')
 
 }
