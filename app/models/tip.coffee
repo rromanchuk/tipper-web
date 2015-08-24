@@ -9,9 +9,9 @@ Tip = DS.Model.extend {
   toTwitterProfileImage: DS.attr('string')
   fromTwitterProfileImage: DS.attr('string')
   objectId: DS.attr('string')
-  transaction: DS.belongsTo('transaction')
-  fromUser: DS.belongsTo('user')
-  toUser: DS.belongsTo('user')
+  transaction: DS.belongsTo('transaction', {async: true})
+  fromUser: DS.belongsTo('user', {async: true})
+  toUser: DS.belongsTo('user', {async: true})
 }
 
 `export default Tip`

@@ -7,6 +7,8 @@ Router = Ember.Router.extend
 
 Router.map ->
   @resource 'tip', path: 'tip/:tip_id', ->
+  @resource 'user', path: 'user/:user_id', ->
+  @resource 'transaction', path: 'transaction/:transaction_id', ->
 
   @route 'privacy'
   @route 'login'
