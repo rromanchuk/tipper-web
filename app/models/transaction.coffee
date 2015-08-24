@@ -11,7 +11,7 @@ Transaction = DS.Model.extend {
   time: DS.attr('date')
 
   tipAmountUbtc: Ember.computed('tipAmount', ->
-    Math.trunc(@get('tipAmount')/0.00000100))
+    Math.trunc(@get('tipAmount')/0.00000100)
   )
 
   detailsObject: Ember.computed('details', ->
