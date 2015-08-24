@@ -5,6 +5,11 @@
       span #{model.fromTwitterUsername} tipped 
       img.img-cricle src=model.toTwitterProfileImage
       span #{model.toTwitterUsername}
+      dl
+        dt Transaction ID
+        dd = model.objectId.txid
+        dt #{model.fromTwitterUsername} balance:
+        dd 
     .section
       h3 Tip trigger:
       == tweet-embed tweetId=model.objectId
