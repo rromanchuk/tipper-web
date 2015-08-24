@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: "Bariol", Times, serif;
+  font-family: HelveticaNeue-Light;
   background: url('images/background-graphic-green.jpg') repeat center center fixed;
 
 }
@@ -97,5 +97,12 @@ body {
 
 form#text-me-link-form {
   display: inline;
+}
+
+
+
+// TIP PAGE
+.transaction-card {
+  background-color: white;
 }
 

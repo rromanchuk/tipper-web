@@ -1,0 +1,28 @@
+table.table
+  tr
+    td
+      | Size
+    td = blockchainData.size
+  tr
+    td
+      | Received Time
+    td
+      | blabh blab
+  tr
+    td
+      | Included in blocks
+    td
+      | 394848933
+  tr
+    td
+      | Confirmations
+    td
+      | 322 Confirmations
+  tr
+    td
+      | Relayed by
+    td = blockchainData.relayedBy
+
+
+
+== yield

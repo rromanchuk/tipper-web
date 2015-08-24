@@ -1,13 +1,13 @@
-`import DS from 'ember-data'`
+`import ApplicationAdapter from './application'`
 
-ApplicationAdapter = DS.RESTAdapter.extend(
+SmsAdapter = DS.RESTAdapter.extend(
+  host: "https://www.downloadtipper.com"
   unknownProperty: (key) ->
     localStorage[key]
   setUnknownProperty: (key, value) ->
     localStorage[key] = value
     @notifyPropertyChange key
     value
-  host: "https://coinbit.tips"
   headers: (->
     {
       'Authorization': @get("authorizationHeader")
@@ -15,4 +15,4 @@ ApplicationAdapter = DS.RESTAdapter.extend(
     }).property("authorizationHeader").volatile()
 )
 
-`export default ApplicationAdapter`
+`export default SmsAdapter`

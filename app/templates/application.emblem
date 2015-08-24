@@ -9,10 +9,24 @@ nav.navbar.navbar-default.tipper-nav
       link-to 'index' class="navbar-brand" | Tipper 
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
-        li
-          a click="signInViaTwitter" Login
+        if session.isWorking
+          li
+            Logging in...
+        if session.isAuthenticated
+          li.dropdown
+            a.dropdown-toggle href='#' data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+              | Hello, @#{session.currentUser.twitterUsername}
+              span.caret
+            ul.dropdown-menu
+              li
+                a click="logout" Logout
+        else
+          li
+            a click="signInViaTwitter" Login
         li
           link-to 'privacy' | Privacy
 .container-fluid
   == outlet
   == partial "footer"
+
+== happyfox-chat
