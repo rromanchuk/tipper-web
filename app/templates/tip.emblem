@@ -9,7 +9,9 @@
         dt Transaction ID
         dd = model.objectId.txid
         dt #{model.fromTwitterUsername} balance:
-        dd 
+        dd #{model.fromUser.bitcoinBalanceBtc}
+        dt #{model.toTwitterUsername} balance:
+        dd #{model.fromUser.bitcoinBalanceBtc}
     .section
       h3 Tip trigger:
       == tweet-embed tweetId=model.objectId
