@@ -5,9 +5,9 @@ table.table
     td = blockchainData.size
   tr
     td
-      | Received Time
+      | Relayed by
     td
-      | blabh blab
+      = blockchainData.relayedBy
   tr
     td
       | Time
@@ -23,5 +23,9 @@ table.table
     td = blockchainData.fee
 
 
-
+table.table
+  each input in blockchainData.inputsArr
+    tr
+      td = input.address
+      td = input.tx_index 
 == yield
