@@ -1,3 +1,4 @@
+== partial "header"
 .row
   .col-lg-6.center-block.transaction-card
     .section.tip-details
