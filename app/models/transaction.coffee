@@ -2,9 +2,11 @@
 
 Transaction = DS.Model.extend {
   txid: DS.attr('string')
-  relayedBy: DS.attr('string')
-  size: DS.attr('string')
-  time: DS.attr('string')
+  fee: DS.attr('number')
+  confirmations: DS.attr('number')
+  tipAmount: DS.attr('number')
+  amount: DS.attr('number')
+  details: DS.attr('string')
   tip: DS.belongsTo('tip', {async: true})
 }
 
