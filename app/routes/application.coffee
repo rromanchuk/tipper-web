@@ -4,6 +4,7 @@ ApplicationRoute = Ember.Route.extend(
   model: ->
     Ember.RSVP.hash
       sms: @store.createRecord 'sms'
+      settings: @store.find('settings', 1)
         # to: '16502438594'
   beforeModel: ->
     @get('session').fetch().then (->

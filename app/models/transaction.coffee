@@ -8,6 +8,10 @@ Transaction = DS.Model.extend {
   amount: DS.attr('number')
   details: DS.attr('string')
   tip: DS.belongsTo('tip', {async: true})
+
+  tipAmountUbtc: Ember.computed('tipAmount', ->
+    @get('tipAmount')/0.00000100
+  )
 }
 
 `export default Transaction`
