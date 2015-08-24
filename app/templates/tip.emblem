@@ -3,7 +3,7 @@
     .section
       img.img-circle src=model.fromTwitterProfileImage
       span #{model.fromTwitterUsername} tipped 
-      img.img-cricle src=model.toTwitterProfileImage
+      img.img-circle src=model.toTwitterProfileImage
       span #{model.toTwitterUsername}
       dl
         dt Transaction ID
@@ -13,7 +13,7 @@
         dt #{model.fromTwitterUsername} balance:
         dd #{model.fromUser.bitcoinBalanceBtc}
         dt #{model.toTwitterUsername} balance:
-        dd #{model.fromUser.bitcoinBalanceBtc}
+        dd #{model.toUser.bitcoinBalanceBtc}
     .section
       h3 Tip trigger:
       == tweet-embed tweetId=model.objectId
