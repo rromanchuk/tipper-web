@@ -1,30 +1,32 @@
 == partial "header"
 .row
   .col-lg-6.center-block.transaction-card
-    .section.tip-details
-      h3
-        img.img-circle src=model.fromTwitterProfileImage
-        span.user #{model.fromTwitterUsername} tipped 
-        img.img-circle src=model.toTwitterProfileImage
-        span.user #{model.toTwitterUsername}
-        span.coiner a
-        span = model.transaction.tipAmountUbtc
-        span  (#{model.transaction.tipAmount} BTC)
-      dl
-        dt Transaction ID:
-        dd 
-          a href="https://blockchain.info/tx/#{model.txid}" 
-            = model.txid
-        dt #{model.fromTwitterUsername} balance:
-        dd #{model.fromUser.bitcoinBalanceBtc}
-        dt #{model.toTwitterUsername} balance:
-        dd #{model.toUser.bitcoinBalanceBtc}
-    .section.trigger
-      h3 Tip trigger:
-      == tweet-embed tweetId=model.objectId
-    .section
-      h3 Bockchain data
-      == blockchain-data blockchainData=model.transaction
+    .row
+      .col-lg-6.center-block
+        .section.tip-details
+          h3
+            img.img-circle src=model.fromTwitterProfileImage
+            span.user #{model.fromTwitterUsername} tipped 
+            img.img-circle src=model.toTwitterProfileImage
+            span.user #{model.toTwitterUsername}
+            span.coiner a
+            span = model.transaction.tipAmountUbtc
+            span  (#{model.transaction.tipAmount} BTC)
+          dl
+            dt Transaction ID:
+            dd 
+              a href="https://blockchain.info/tx/#{model.txid}" 
+                = model.txid
+            dt #{model.fromTwitterUsername} balance:
+            dd #{model.fromUser.bitcoinBalanceBtc}
+            dt #{model.toTwitterUsername} balance:
+            dd #{model.toUser.bitcoinBalanceBtc}
+        .section.trigger
+          h3 Tip trigger:
+          == tweet-embed tweetId=model.objectId
+        .section
+          h3 Bockchain data
+          == blockchain-data blockchainData=model.transaction
 
 
 == outlet
