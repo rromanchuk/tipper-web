@@ -5,6 +5,7 @@
       span #{model.fromTwitterUsername} tipped 
       img.img-circle src=model.toTwitterProfileImage
       span #{model.toTwitterUsername}
+      span.coiner a
       dl
         dt Transaction ID
         dd 
