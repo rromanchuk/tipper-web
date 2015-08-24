@@ -1,7 +1,8 @@
 `import ApplicationAdapter from './application'`
+`import ENV from 'tipper/config/environment'`
 
 SmsAdapter = DS.RESTAdapter.extend(
-  host: "https://www.downloadtipper.com"
+  host: ENV.API_HOST
   unknownProperty: (key) ->
     localStorage[key]
   setUnknownProperty: (key, value) ->

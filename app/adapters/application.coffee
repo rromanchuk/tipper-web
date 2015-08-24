@@ -1,4 +1,5 @@
 `import DS from 'ember-data'`
+`import ENV from 'tipper/config/environment'`
 
 ApplicationAdapter = DS.RESTAdapter.extend(
   unknownProperty: (key) ->
@@ -7,7 +8,7 @@ ApplicationAdapter = DS.RESTAdapter.extend(
     localStorage[key] = value
     @notifyPropertyChange key
     value
-  host: "https://coinbit.tips"
+  host: ENV.API_HOST
   headers: (->
     {
       'Authorization': @get("authorizationHeader")
