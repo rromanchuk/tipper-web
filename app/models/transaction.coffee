@@ -8,9 +8,14 @@ Transaction = DS.Model.extend {
   amount: DS.attr('number')
   details: DS.attr('string')
   tip: DS.belongsTo('tip', {async: true})
+  time: DS.attr('date')
 
   tipAmountUbtc: Ember.computed('tipAmount', ->
     @get('tipAmount')/0.00000100
+  )
+
+  detailsObject: Ember.computed('details', ->
+    JSON.parse(@get('details'))
   )
 }
 

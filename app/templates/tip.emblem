@@ -6,7 +6,7 @@
       img.img-circle src=model.toTwitterProfileImage
       span #{model.toTwitterUsername}
       span.coiner a
-      span = model.transaction.tipAmountUbtc model.transaction.tipAmount
+      span = model.transaction.tipAmountUbtc
       span (#{model.transaction.tipAmount} BTC)
       dl
         dt Transaction ID

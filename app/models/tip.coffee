@@ -13,6 +13,7 @@ Tip = DS.Model.extend {
   fromUser: DS.belongsTo('user', {async: true})
   toUser: DS.belongsTo('user', {async: true})
   tippedAt: DS.attr('date')
+
 }
 
 `export default Tip`

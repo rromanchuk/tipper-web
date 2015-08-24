@@ -10,18 +10,17 @@ table.table
       | blabh blab
   tr
     td
-      | Included in blocks
+      | Time
     td
-      | 394848933
+      = blockchainData.confirmations
   tr
     td
       | Confirmations
-    td
-      | 322 Confirmations
+    td = blockchainData.confirmations
   tr
     td
-      | Relayed by
-    td = blockchainData.relayedBy
+      | Fee paid
+    td = blockchainData.fee
 
 
 
