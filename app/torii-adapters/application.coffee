@@ -23,7 +23,7 @@ ToriiAdapter = Ember.Object.extend
       { currentUser: me }
   fetch: ->
     console.log 'fetch'
-    if !localStorage.token
+    if !localStorage.token || !localStorage.authorizationHeader
       return rejectPromise()
     @get('store').find('me', 'refresh').then (me) ->
       console.log me.get('twitterUsername')
