@@ -2,7 +2,7 @@
 .row
   .col-lg-6.center-block.transaction-card
     .row
-      .col-lg-6.center-block
+      .col-lg-10.center-block
         .section.tip-details
           h3
             img.img-circle src=model.fromTwitterProfileImage
