@@ -10,7 +10,8 @@ module.exports = function(environment) {
       sessionServiceName: 'session',
       providers: {
         'twitter': {
-          requestTokenUri: '/auth/twitter'
+          requestTokenUri: '/auth/twitter',
+          redirectUri: 'https://wwww.downloadtipper.com'
         }
       }
     },

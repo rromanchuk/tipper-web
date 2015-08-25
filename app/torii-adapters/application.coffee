@@ -30,12 +30,13 @@ ToriiAdapter = Ember.Object.extend
       { currentUser: me }
   close: ->
     console.log 'close'
-    authToken = localStorage.token
+    authHeader = localStorage.authorizationHeader
     localStorage.token = null
+    localStorage.authorizationHeader = null
     new (Ember.RSVP.Promise)((resolve, reject) ->
       Ember.$.ajax
         url: '/logout'
-        headers: 'Authorization': authToken
+        headers: 'Authorization': authHeader
         type: 'POST'
         success: Ember.run.bind(null, resolve)
         error: Ember.run.bind(null, reject)
