@@ -31,7 +31,6 @@ ToriiAdapter = Ember.Object.extend
     authHeader = localStorage.authorizationHeader
     localStorage.removeItem("token");
     localStorage.removeItem("authorizationHeader");
-    localStorage.authorizationHeader = null
     new (Ember.RSVP.Promise)((resolve, reject) ->
       Ember.$.ajax
         url: '/logout'
