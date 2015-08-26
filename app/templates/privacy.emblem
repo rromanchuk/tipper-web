@@ -1,3 +1,4 @@
+== partial "header"
 .row
   .col-lg-6.center-block.card
     h1 Privacy Policy
