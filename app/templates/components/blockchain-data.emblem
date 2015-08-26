@@ -7,7 +7,8 @@ table.table
     td
       | Relayed by
     td
-      = blockchainData.relayedBy
+      a href="https://blockchain.info/ip-address/#{blockchainData.relayedBy}" 
+        = blockchainData.relayedBy
   tr
     td
       | Time

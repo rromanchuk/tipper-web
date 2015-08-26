@@ -1,5 +1,5 @@
 .row
-  .col-md-offset-4.col-md-6
+  .col-lg-6.center-block.card
     h1 Privacy Policy
     p Last updated: May 04, 2015
     p Tipper ("us", "we", or "our") operates the https://www.downloadtipper.com website (the "Service").
