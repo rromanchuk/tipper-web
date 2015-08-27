@@ -19,6 +19,8 @@ nav.navbar.navbar-default.tipper-nav
               span.caret
             ul.dropdown-menu
               li
+                link-to 'me' | Me
+              li
                 a click="logout" Logout
         else
           li
