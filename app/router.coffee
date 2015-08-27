@@ -12,5 +12,6 @@ Router.map ->
 
   @route 'privacy'
   @route 'login'
+  @route 'me'
 
 `export default Router`

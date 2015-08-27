@@ -1,0 +1,5 @@
+== partial "header"
+.row
+  .col-lg-6.center-block.transaction-card
+  
+== outlet

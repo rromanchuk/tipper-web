@@ -13,7 +13,8 @@ table.table
     td
       | Time
     td
-      = blockchainData.time
+      time
+        = blockchainData.time
   tr
     td
       | Confirmations
