@@ -60,7 +60,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.API_HOST = "https://coinbit.tips"
+    ENV.API_HOST = "https://coinbit.tips/api"
   }
 
   return ENV;
