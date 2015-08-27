@@ -1,5 +1,20 @@
 == partial "header"
 .row
   .col-lg-6.center-block.transaction-card
+    .row
+      .col-lg-10
+        .row
+          img.img-responsive src=model.profileImage
+          span = model.twitterUsername
+          span Balance: a34958
+          p hfjsdhf sdfhjksdf sdfhkjsdf sdf hdksjfd sfdshf
+          p fhskjdhfjksd fsdfh skdfh sdfkjdshf dsfhksdjf dsfhksdjf
+          p dsfhkjsdhfksdf sdf ksjdfhsdjkf sdfhkj
+        .row
+          section
+            p sfhsdkf  fdhskjf sdfsdhkjf dsfdshkfjds hfkjds 
+            == switch-control
+
+
   
 == outlet
