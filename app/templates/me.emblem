@@ -1,12 +1,12 @@
 == partial "header"
 .row
-  .col-lg-6.center-block.transaction-card
+  .col-lg-6.center-block.card.user-profile
     .row
       .col-lg-10.center-block
-        .row
+        section.row.user-header
           img.img-responsive.img-circle src=session.currentUser.profileImage
           span = session.currentUser.twitterUsername
-          span Balance: #{session.currentUser.bitcoinBalanceBtc}
+          span.pull-right Balance: #{session.currentUser.bitcoinBalanceBtc}
         .row
           ul.nav.nav-tabs.nav-justified
             li class={isActive:active}
@@ -22,7 +22,7 @@
             == switch-control
             p When you favorite a Tweet on Twitter, Tipper will initiative a Bitcoin transaction of b500 (0.0005BTC) to the author of the Tweet.
             h3 Deposit Funds
-            == stripe-checkout class="btn btn-default" image="/square-image.png" name="Demo Site" description="2 widgets ($20.00)" amount=2000 action="processStripeToken"
+            == stripe-checkout class="btn btn-default" image="assets/images/tipper-logo-header.png" name="Tipper" description="Tipper balance refill" amount=2000 action="processStripeToken"
               | Exchange  
               span.glyphicon.glyphicon-credit-card
 
