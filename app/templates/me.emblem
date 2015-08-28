@@ -4,7 +4,7 @@
     .row
       .col-lg-10.center-block
         section.row.user-header
-          img.img-responsive.img-circle src=session.currentUser.profileImage
+          img.img-responsive.img-circle.pull-left src=session.currentUser.profileImage
           span = session.currentUser.twitterUsername
           span.pull-right Balance: #{session.currentUser.bitcoinBalanceBtc}
         .row
@@ -16,16 +16,23 @@
 
           section.transactions class={isActive:hidden:}
           section.settings class={isActive::hidden}
-            h3 Twitter Account
-            p This is the Twitter account we have associated with your Tipper wallet and Favorites on Twitter.
-            h3 Auto-tip Twitter favorites
-            == switch-control
-            p When you favorite a Tweet on Twitter, Tipper will initiative a Bitcoin transaction of b500 (0.0005BTC) to the author of the Tweet.
-            h3 Deposit Funds
-            == stripe-checkout class="btn btn-default" image="assets/images/tipper-logo-header.png" name="Tipper" description="Tipper balance refill" amount=2000 action="processStripeToken"
-              | Exchange  
-              span.glyphicon.glyphicon-credit-card
-
+            .row
+              h3 Twitter Account
+              .span.pull-right Update
+              .row
+                p This is the Twitter account we have associated with your Tipper wallet and Favorites on Twitter.
+            .row
+              h3 Auto-tip Twitter favorites
+              span.pull-right
+                == switch-control
+              .row
+                p When you favorite a Tweet on Twitter, Tipper will initiative a Bitcoin transaction of b500 (0.0005BTC) to the author of the Tweet.
+            .row
+              h3 Deposit Funds
+              == stripe-checkout class="btn btn-default" image="assets/images/tipper-logo-header.png" name="Tipper" description="Tipper balance refill" amount=2000 action="processStripeToken"
+                | Exchange  
+                span.glyphicon.glyphicon-credit-card
+              span $4.66 for #{model.settings.fundAmount}
             h3 Withdraw funds
             form
               .input-group
