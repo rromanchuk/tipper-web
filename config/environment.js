@@ -45,6 +45,9 @@ module.exports = function(environment) {
     ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.API_HOST = "http://localhost:3000"
+    ENV.stripe = {
+      key: process.env.STRIPE_PUBLISHABLE_KEY
+    };
   }
 
   if (environment === 'test') {
@@ -61,6 +64,9 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     ENV.API_HOST = "https://coinbit.tips/api"
+    ENV.stripe = {
+      key: process.env.STRIPE_PUBLISHABLE_KEY
+    };
   }
 
   return ENV;
