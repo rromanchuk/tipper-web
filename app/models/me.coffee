@@ -6,6 +6,7 @@ Me = DS.Model.extend {
   twitterUsername: DS.attr('string')
   bitcoinAddress: DS.attr('string')
   profileImage: DS.attr('string')
+  bitcoinBalanceBtc: DS.attr('string')
 }
 
 `export default Me`

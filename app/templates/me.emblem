@@ -4,9 +4,9 @@
     .row
       .col-lg-10.center-block
         .row
-          img.img-responsive src=model.profileImage
-          span = model.twitterUsername
-          span Balance: a34958
+          img.img-responsive.img-circle src=session.currentUser.profileImage
+          span = session.currentUser.twitterUsername
+          span Balance: #{session.currentUser.bitcoinBalanceBtc}
         .row
           ul.nav.nav-tabs.nav-justified
             li class={isActive:active}
