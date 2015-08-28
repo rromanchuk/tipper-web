@@ -30,7 +30,7 @@
               == stripe-checkout class="btn btn-default" image="assets/images/tipper-logo-header.png" name="Tipper" description="Tipper balance refill" amount=2000 action="processStripeToken"
                 | Exchange  
                 span.glyphicon.glyphicon-credit-card
-              span $4.66 for #{model.settings.fundAmount}
+              span #{model.settings.marketPrice} for #{model.settings.fundAmount}
             h3 Withdraw funds
             form
               .input-group
