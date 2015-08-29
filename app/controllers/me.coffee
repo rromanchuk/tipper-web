@@ -1,11 +1,11 @@
 `import Ember from 'ember'`
 
 MeController = Ember.Controller.extend(
-  isActive: true
+  isSettingsActive: true
   actions:
     toggleTab: ->
       console.log 'toggleTab'
-      @set('isActive', !@get('isActive'))
+      @set('isSettingsActive', !@get('isSettingsActive'))
 )
 
 `export default MeController`

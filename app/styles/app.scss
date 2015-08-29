@@ -196,12 +196,28 @@ form#text-me-link-form {
 
 // USER ACCOUNT PAGE
 .user-profile {
+  p {
+    /* This is the Twitter : */
+    font-family: HelveticaNeue-Light;
+    font-size: 16px;
+    color: #666666;
+    letter-spacing: 0.56px;
+    line-height: 27px;
+  }
   .user-header {
     font-family: HelveticaNeue;
     font-size: 30px;
     color: #666666;
     letter-spacing: 1.24px;
     line-height: 36px;
+  }
+  .purchase-price {
+    /* $4.66 for b20000: */
+    font-family: HelveticaNeue-Light;
+    font-size: 24px;
+    color: #666666;
+    letter-spacing: 1px;
+    line-height: 29px;
   }
 }
 
