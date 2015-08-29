@@ -37,11 +37,11 @@
               span.purchase-price $#{model.settings.marketPrice} for #{model.settings.fundAmount}
             .row
               h3 Withdraw funds
-            form
-              .input-group
-                = input type="text" class="form-control" placeholder="Type or paste address"
-                .btn.btn-default.input-group-addon{action "withdraw"} type="submit"
-                  span.glyphicon.glyphicon-arrow-right
+              form
+                .input-group
+                  = input type="text" class="form-control" placeholder="Type or paste address"
+                  .btn.btn-default.input-group-addon{action "withdraw"} type="submit"
+                    span.glyphicon.glyphicon-arrow-right
             
 
 
