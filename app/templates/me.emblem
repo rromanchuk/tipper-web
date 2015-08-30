@@ -26,7 +26,7 @@
               p This is the Twitter account we have associated with your Tipper wallet and Favorites on Twitter.
             .row
               h3.pull-left Auto-tip Twitter favorites
-              == switch-control me=session.currentUser
+              == switch-control isAutomaticTippingEnabled=session.currentUser.automaticTippingEnabled
               .row
               p When you favorite a Tweet on Twitter, Tipper will initiative a Bitcoin transaction of b500 (0.0005BTC) to the author of the Tweet.
             .row
