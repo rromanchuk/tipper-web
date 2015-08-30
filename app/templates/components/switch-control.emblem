@@ -1,5 +1,6 @@
   
-= input type="checkbox" name="toggle" id="toggle" checked={isAutomaticTippingEnabled:true:}
+= input type="checkbox" name="toggle" id="toggle" checked=isAutomaticTippingEnabled action=toggleAutomaticTipping
 label for="toggle"
 
 == yield
+
