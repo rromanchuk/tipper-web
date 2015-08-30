@@ -1,5 +1,5 @@
   
-= input type="checkbox" name="toggle" id="toggle" checked=me.automaticTippingEnabled:true
+= input type="checkbox" name="toggle" id="toggle" checked=me.automaticTippingEnabled
 label for="toggle"
 
 == yield
