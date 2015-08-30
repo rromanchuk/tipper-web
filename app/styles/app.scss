@@ -24,6 +24,10 @@ body {
   background-color: rgba(109,186,148, 0.75);
   border: none;
   border-radius: 0;
+
+  .dropdown-menu {
+    width: 100%;
+  }
 }
 
 .navbar .navbar-brand, .navbar .nav > li > a {
