@@ -5,7 +5,7 @@ MeRoute = Ember.Route.extend(
     console.log "MeRoute::beforeModel"
     console.log @get('session')
     console.log @get('session.isAuthenticated')
-    if !@get('session').isAuthenticated
+    if @get('session.isAuthenticated').isAuthenticated
       @transitionTo('index')
 )
 
