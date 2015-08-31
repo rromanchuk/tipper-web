@@ -1,4 +1,12 @@
+$brand-primary: #5BBC84;
+$btn-default-bg: $brand-primary;
+$btn-default-color: #fff;
+$btn-default-border: $brand-primary;
+$input-group-addon-bg: $brand-primary;
+$legend-color: #fff;
+$input-color: #fff;
 @import "bootstrap";
+
 
 @font-face {
   font-family: 'coiner';
