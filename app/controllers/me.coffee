@@ -6,6 +6,9 @@ MeController = Ember.Controller.extend(
     toggleTab: ->
       console.log 'toggleTab'
       @set('isSettingsActive', !@get('isSettingsActive'))
+    toggleAutomaticTipping: ->
+      console.log "toggleAutomaticTipping"
+      console.log @get('session.currentUser.isAutomaticTippingEnabled')
 )
 
 `export default MeController`

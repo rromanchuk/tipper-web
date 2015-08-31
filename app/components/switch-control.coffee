@@ -5,8 +5,8 @@ SwitchControlComponent = Ember.Component.extend(
   actions:
     toggleAutomaticTipping: ->
       console.log "toggle automatic tipping"
-      @get('me').toggleProperty("isAutomaticTippingEnabled")
-      true
+      #@toggleProperty("isAutomaticTippingEnabled")
+      @sendAction('toggleAutomaticTipping')
   didInsertElement: ->
     #console.log(@get("isAutomaticTippingEnabled"))
     console.log("didInsertElement")

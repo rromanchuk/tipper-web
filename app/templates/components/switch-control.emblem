@@ -1,6 +1,5 @@
   
-= input type="checkbox" name="toggle" id="toggle" checked=isAutomaticTippingEnabled click='toggleAutomaticTipping'
-label for="toggle" click='toggleAutomaticTipping' preventDefault=false
-
+= input type="checkbox" name="toggle" id="toggle" checked=isAutomaticTippingEnabled 
+label for="toggle" click='toggleAutomaticTipping'
 == yield
 

@@ -7,7 +7,7 @@ Me = DS.Model.extend {
   bitcoinAddress: DS.attr('string')
   profileImage: DS.attr('string')
   bitcoinBalanceBtc: DS.attr('string')
-  automaticTippingEnabled: DS.attr('boolean', {defaultValue: true})
+  isAutomaticTippingEnabled: DS.attr('boolean', {defaultValue: true})
 }
 
 `export default Me`
