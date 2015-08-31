@@ -2,11 +2,8 @@
 
 MeRoute = Ember.Route.extend(
   beforeModel: ->
-    @get('session').fetch().then (->
-      console.log 'Session was fetched'
-      return
-    ), =>
-      console.log 'Session failed to fetch'
+    console.log @get('session').isAuthenticated
+    if !@get('session').isAuthenticated
       @transitionTo('index')
 )
 
