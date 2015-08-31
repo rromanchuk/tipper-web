@@ -3,7 +3,7 @@
   .col-lg-6.col-xs-12.center-block.card.user-profile
     .row
       .col-lg-10.col-xs-10.center-block
-        section.row.user-header
+        .row.user-header
           img.img-responsive.img-circle.pull-left src=session.currentUser.profileImage
           span.username = session.currentUser.twitterUsername
           .balance.pull-right
@@ -11,7 +11,7 @@
             span.coiner a
             span #{session.currentUser.bitcoinBalanceBtc}
         .row
-          ul.nav.nav-tabs.nav-justified
+          ul.nav.nav-tabs.nav-justified.hidden
             li class={isSettingsActive::active}
               a{action 'toggleTab'} Transaction history
             li class={isSettingsActive:active}
