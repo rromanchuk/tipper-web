@@ -1,3 +1,5 @@
-# http://www.robotstxt.org
-User-agent: *
-Disallow:
+User-Agent: *
+Disallow: /me
+Disallow: /api/
+
+Allow: /

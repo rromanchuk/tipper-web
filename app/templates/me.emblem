@@ -1,8 +1,8 @@
 == partial "header"
 .row
-  .col-lg-6.center-block.card.user-profile
+  .col-lg-6.col-xs-12.center-block.card.user-profile
     .row
-      .col-lg-10.center-block
+      .col-lg-10.col-xs-10.center-block
         section.row.user-header
           img.img-responsive.img-circle.pull-left src=session.currentUser.profileImage
           span = session.currentUser.twitterUsername
@@ -17,31 +17,30 @@
             li class={isSettingsActive:active}
               a{action 'toggleTab'} Settings
 
-          section.transactions class={isSettingsActive:hidden:}
-          section.settings class={isSettingsActive::hidden}
+          .transactions class={isSettingsActive:hidden:}
+          .row.settings class={isSettingsActive::hidden}
+            h3.pull-left Twitter Account
+            h3.pull-right Update
             .row
-              h3.pull-left Twitter Account
-              h3.pull-right Update
-              .row
-              p This is the Twitter account we have associated with your Tipper wallet and Favorites on Twitter.
+            p This is the Twitter account we have associated with your Tipper wallet and Favorites on Twitter.
+          .row
+            h3.pull-left Auto-tip Twitter favorites
+            == switch-control isAutomaticTippingEnabled=session.currentUser.isAutomaticTippingEnabled toggleAutomaticTipping="toggleAutomaticTipping"
             .row
-              h3.pull-left Auto-tip Twitter favorites
-              == switch-control isAutomaticTippingEnabled=session.currentUser.isAutomaticTippingEnabled toggleAutomaticTipping="toggleAutomaticTipping"
-              .row
-              p When you favorite a Tweet on Twitter, Tipper will initiative a Bitcoin transaction of b500 (0.0005BTC) to the author of the Tweet.
-            .row
-              h3 Deposit Funds
-              == stripe-checkout class="btn btn-default btn-lg" image="assets/images/tipper-logo-header.png" name="Tipper" description="Tipper balance refill" amount=2000 action="processStripeToken"
-                | Exchange  
-                span.glyphicon.glyphicon-credit-card
-              span.purchase-price $#{model.settings.marketPrice} for #{model.settings.fundAmount}
-            .row
-              h3 Withdraw funds
-              form
-                .input-group
-                  = input type="text" class="form-control" placeholder="Type or paste address"
-                  .btn.btn-default.input-group-addon{action "withdraw"} type="submit"
-                    span.glyphicon.glyphicon-arrow-right
+            p When you favorite a Tweet on Twitter, Tipper will initiative a Bitcoin transaction of b500 (0.0005BTC) to the author of the Tweet.
+          .row
+            h3 Deposit Funds
+            == stripe-checkout class="btn btn-default btn-lg" image="assets/images/tipper-logo-header.png" name="Tipper" description="Tipper balance refill" amount=2000 action="processStripeToken"
+              | Exchange  
+              span.glyphicon.glyphicon-credit-card
+            span.purchase-price $#{model.settings.marketPrice} for #{model.settings.fundAmount}
+          .row
+            h3 Withdraw funds
+            form
+              .input-group
+                = input type="text" class="form-control" placeholder="Type or paste address"
+                .btn.btn-default.input-group-addon{action "withdraw"} type="submit"
+                  span.glyphicon.glyphicon-arrow-right
             
 
 
