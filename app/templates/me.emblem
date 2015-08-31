@@ -5,7 +5,7 @@
       .col-lg-10.col-xs-10.center-block
         section.row.user-header
           img.img-responsive.img-circle.pull-left src=session.currentUser.profileImage
-          span = session.currentUser.twitterUsername
+          span.username = session.currentUser.twitterUsername
           .balance.pull-right
             span Balance: 
             span.coiner a
