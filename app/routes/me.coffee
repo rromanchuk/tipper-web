@@ -5,7 +5,7 @@ MeRoute = Ember.Route.extend(
     @get('session').fetch().then (->
       console.log 'Session was fetched'
       return
-    ), ->
+    ), =>
       console.log 'Session failed to fetch'
       @transitionTo('index')
 )
