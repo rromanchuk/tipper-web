@@ -3,7 +3,7 @@
     img#download-ios.img-responsive src="assets/images/download.svg" height="60" width="200"
   form#text-me-link-form.visible-lg-block.visible-md-block
     .input-group
-      = input type="text" class="form-control" placeholder="Enter your phone number" value=sendTo
+      = input type="text" class="form-control" placeholder="+1 (555) 555 5555" value=sendTo
       .btn.btn-default.input-group-addon.send-sms{action "sendSms"} type="submit"
         span.glyphicon.glyphicon-arrow-right
 .col-lg-8.col-md-8
