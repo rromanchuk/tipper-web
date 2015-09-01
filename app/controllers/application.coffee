@@ -2,11 +2,10 @@
 `import ENV from 'tipper/config/environment'`
 
 ApplicationController = Ember.Controller.extend(
-	actions:
+  actions:
     sendSms: ->
       console.log("sendSms")
       @get('model.sms').save()
-      return
 
 
 )
