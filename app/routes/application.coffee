@@ -13,7 +13,10 @@ ApplicationRoute = Ember.Route.extend(
     ), ->
       console.log 'Session failed to fetch'
       return
-  actions: 
+  actions:
+    sendSms: ->
+      console.log("sendSms")
+      @get('model.sms').save()
     signInViaTwitter: ->
       console.log 'signInViaTwitter'
       route = this
