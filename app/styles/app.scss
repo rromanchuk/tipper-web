@@ -1,4 +1,13 @@
+$brand-primary: #5BBC84;
+$btn-default-bg: $brand-primary;
+$btn-default-color: #fff;
+$btn-default-border: $brand-primary;
+$input-group-addon-bg: $brand-primary;
+$legend-color: #fff;
+$input-color: #fff;
+
 @import "bootstrap";
+
 
 @font-face {
   font-family: 'coiner';
@@ -9,7 +18,7 @@
 
 .coiner {
   font-family: coiner;
-  letter-spacing: -10px;
+  letter-spacing: -5px;
   font-size: 140%;
 }
 
@@ -194,7 +203,7 @@ form#text-me-link-form {
 
   input#toggle:checked + label:before {
     width: 50px;
-    background: rgba(19, 191, 17, 1);
+    background: $brand-primary;
   }
 
   input#toggle:checked + label:after {
@@ -220,6 +229,9 @@ form#text-me-link-form {
     color: #666666;
     letter-spacing: 1.24px;
     line-height: 36px;
+    .username {
+      padding-left: 10px;
+    }
   }
   .purchase-price {
     /* $4.66 for b20000: */
