@@ -16,7 +16,7 @@ ApplicationRoute = Ember.Route.extend(
   actions:
     sendSms: ->
       console.log("sendSms")
-      @get('model.sms').save()
+      @currentModel.sms.save()
     signInViaTwitter: ->
       console.log 'signInViaTwitter'
       route = this
