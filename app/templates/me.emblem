@@ -33,7 +33,7 @@
               |500 (0.0005BTC) to the author of the Tweet.
           .row
             h3 Deposit Funds
-            == stripe-checkout class="btn btn-default btn-lg" image="assets/images/tipper-logo-header.png" name="Tipper" description="Tipper balance refill" amount=2000 action="processStripeToken"
+            == stripe-checkout class="btn btn-default btn-lg" image="assets/images/tipper-logo-header.png" name="Tipper" description="Tipper balance refill" amount=model.settings.fundAmountInCents action="processStripeToken"
               | Exchange  
               span.glyphicon.glyphicon-credit-card
             span.purchase-price $#{model.settings.marketPrice} for #{model.settings.fundAmount}BTC

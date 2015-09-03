@@ -51,7 +51,7 @@ module.exports = {
     },
     assets: {
       type: 's3',
-      gzipExtensions: ['js', 'css', 'svg'],
+      gzipExtensions: ['js', 'css', 'svg', 'txt'],
       accessKeyId: 'AKIAJ5C5NX4CZVSQOYKQ',
       secretAccessKey: process.env['AWS_ACCESS_KEY'],
       bucket: 'tipper-assets',
