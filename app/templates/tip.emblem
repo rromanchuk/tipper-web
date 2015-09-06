@@ -1,4 +1,4 @@
-== partial "header"
+== compact-header sendSms="sendSms" sendTo=model.sms.to
 .row
   .col-lg-6.center-block.transaction-card
     .row
