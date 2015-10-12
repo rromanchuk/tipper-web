@@ -11,7 +11,7 @@ module.exports = function(environment) {
       providers: {
         'twitter': {
           requestTokenUri: '/auth/twitter',
-          redirectUri: 'https://wwww.downloadtipper.com'
+          redirectUri: 'https://wwww.trytipper.com'
         }
       }
     },
@@ -63,7 +63,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.API_HOST = "https://coinbit.tips/api"
+    ENV.API_HOST = "https://api.trytipper.com/api"
     ENV.stripe = {
       key: process.env.STRIPE_PUBLISHABLE_KEY
     };
