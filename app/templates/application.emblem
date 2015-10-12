@@ -6,7 +6,7 @@ nav.navbar.navbar-default.tipper-nav
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      link-to 'index' class="navbar-brand" | Tipper 
+      link-to 'index' class="navbar-brand" | tipper
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         if session.isWorking
