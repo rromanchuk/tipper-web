@@ -16,6 +16,13 @@ $input-color: #fff;
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Bariol';
+  src: url('/assets/fonts/Bariol.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .coiner {
   font-family: coiner;
   letter-spacing: -5px;
@@ -23,7 +30,7 @@ $input-color: #fff;
 }
 
 body {
-  font-family: HelveticaNeue-Light;
+  font-family: 'Bariol';
   background: url('images/background-graphic-green.jpg') repeat center center fixed;
 
 }
