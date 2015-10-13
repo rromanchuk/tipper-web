@@ -5,7 +5,7 @@
   .row.header-text
     .col-lg-8.col-md-7
       h1 tipper
-      h2 The Bitcoin wallet that sends Micro Payments to real people for digital actions.
+      h2 Attach Bitcoin tips to Twitter Favorites
   .row
     .col-lg-4.col-md-4
       a#download-link href="https://itunes.apple.com/us/app/tipper-micro-payments/id986575823?ls=1&mt=8" 
