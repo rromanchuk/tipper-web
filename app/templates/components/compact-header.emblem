@@ -10,6 +10,6 @@
   img#header-logo.pull-left src="assets/images/tipper-logo-header.png" width="130" height="130"
   .row.header-text
     .col-lg-8.col-md-7
-      h1 Tipper
-      h2 The Bitcoin wallet that sends Micro Payments to real people for digital actions.
+      h1 tipper
+      h2 Attach Bitcoin tips to Twitter Favorites
 == yield
