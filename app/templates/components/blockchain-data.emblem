@@ -1,7 +1,7 @@
 table.table
   tr
     td
-      | Size
+      | Size of transaction
     td = blockchainData.size
   tr
     td
@@ -11,18 +11,18 @@ table.table
         = blockchainData.relayedBy
   tr
     td
-      | Time
+      | Broadcasted at
     td
       time
-        = blockchainData.time
+        #{blockchainData.time}
   tr
     td
-      | Confirmations
-    td = blockchainData.confirmations
+      | Number of confirmations
+    td  #{blockchainData.confirmations}
   tr
     td
-      | Fee paid
-    td = blockchainData.fee
+      | Fees paid to Bitcoin miners
+    td #{blockchainData.fee}BTC 
 
 
 table.table

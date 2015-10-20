@@ -13,13 +13,9 @@
             span = model.transaction.tipAmountUbtc
             span  (#{model.transaction.tipAmount} BTC)
           dl
-            dt Transaction ID:
-            dd 
-              a href="https://blockchain.info/tx/#{model.txid}" 
-                = model.txid
-            dt #{model.fromTwitterUsername} balance:
+            dt #{model.fromTwitterUsername}'s balance:
             dd #{model.fromUser.bitcoinBalanceBtc}
-            dt #{model.toTwitterUsername} balance:
+            dt #{model.toTwitterUsername}'s balance:
             dd #{model.toUser.bitcoinBalanceBtc}
         .section.trigger
           h3 Tip trigger:
