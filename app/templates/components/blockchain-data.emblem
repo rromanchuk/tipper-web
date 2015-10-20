@@ -1,33 +1,34 @@
 table.table.table-striped
-  tr
-    td
-      | Unique blockchain transaction id
-    td
-      a href="https://blockchain.info/tx/#{model.txid}" 
-        = blockchainData.txid
-  tr
-    td
-      | Size of transaction
-    td #{blockchainData.size}kb
-  tr
-    td
-      | Relayed by
-    td
-      a href="https://blockchain.info/ip-address/#{blockchainData.relayedBy}" 
-        = blockchainData.relayedBy
-  tr
-    td
-      | Broadcasted at
-    td
-      time #{blockchainData.time}
-  tr
-    td
-      | Number of confirmations
-    td #{blockchainData.confirmations}
-  tr
-    td
-      | Fees paid to Bitcoin miners
-    td #{blockchainData.fee}BTC (~2⁄1000¢)
+  tbody
+    tr
+      td
+        | Unique transaction id
+      td
+        a href="https://blockchain.info/tx/#{model.txid}" 
+          = blockchainData.txid
+    tr
+      td
+        | Size of transaction
+      td #{blockchainData.size}kb
+    tr
+      td
+        | Relayed by
+      td
+        a href="https://blockchain.info/ip-address/#{blockchainData.relayedBy}" 
+          = blockchainData.relayedBy
+    tr
+      td
+        | Broadcasted at
+      td
+        time #{blockchainData.time}
+    tr
+      td
+        | Number of confirmations
+      td #{blockchainData.confirmations}
+    tr
+      td
+        | Fees paid to network
+      td #{blockchainData.fee}BTC (~2⁄1000¢)
 
 
 table.table
