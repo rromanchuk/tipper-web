@@ -18,10 +18,9 @@
             dt #{model.toTwitterUsername}'s balance:
             dd #{model.toUser.bitcoinBalanceBtc}
         .section.trigger
-          h3 Tip trigger:
           == tweet-embed tweetId=model.objectId
         .section
-          h3 Bockchain data
+          h3 Transaction information
           == blockchain-data blockchainData=model.transaction
 
 
