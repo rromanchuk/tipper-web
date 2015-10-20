@@ -1,4 +1,4 @@
-table.table
+table.table.table-striped
   tr
     td
       | Unique blockchain transaction id
