@@ -4,7 +4,7 @@ table.table.table-striped
       td
         | Unique transaction id
       td
-        a href="https://blockchain.info/tx/#{model.txid}" 
+        a href="https://blockchain.info/tx/#{blockchainData.txid}" 
           = blockchainData.txid
     tr
       td
