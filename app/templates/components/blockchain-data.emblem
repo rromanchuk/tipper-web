@@ -1,8 +1,14 @@
 table.table
   tr
     td
+      | Unique blockchain transaction id
+    td
+      a href="https://blockchain.info/tx/#{model.txid}" 
+        = blockchainData.txid
+  tr
+    td
       | Size of transaction
-    td = blockchainData.size
+    td #{blockchainData.size}kb
   tr
     td
       | Relayed by
@@ -13,16 +19,15 @@ table.table
     td
       | Broadcasted at
     td
-      time
-        #{blockchainData.time}
+      time #{blockchainData.time}
   tr
     td
       | Number of confirmations
-    td  #{blockchainData.confirmations}
+    td #{blockchainData.confirmations}
   tr
     td
       | Fees paid to Bitcoin miners
-    td #{blockchainData.fee}BTC 
+    td #{blockchainData.fee}BTC (~2⁄1000¢)
 
 
 table.table
