@@ -1,36 +1,36 @@
 nav.navbar.navbar-default.tipper-nav
-.container
-  .navbar-header
-    button.navbar-toggle.collapsed data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"
-      span.sr-only Toggle navigation
-      span.icon-bar
-      span.icon-bar
-      span.icon-bar
-    / link-to 'index' class="navbar-brand"
-    /   img src="assets/images/tipper-logo-header.png" width="50" height="50" 
-    link-to 'index' class="navbar-brand" | tipper
-  #navbar.collapse.navbar-collapse
-    ul.nav.navbar-nav.navbar-right
-      if session.isWorking
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      / link-to 'index' class="navbar-brand"
+      /   img src="assets/images/tipper-logo-header.png" width="50" height="50" 
+      link-to 'index' class="navbar-brand" | tipper
+    #navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        if session.isWorking
+          li
+            Logging in...
+        if session.isAuthenticated
+          li.dropdown
+            a.dropdown-toggle href='#' data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
+              | Hello, @#{session.currentUser.twitterUsername}
+              span.caret
+            ul.dropdown-menu
+              li
+                link-to 'me' | Me
+              li
+                a click="logout" Logout
+        else
+          li
+            a click="signInViaTwitter" Login
         li
-          Logging in...
-      if session.isAuthenticated
-        li.dropdown
-          a.dropdown-toggle href='#' data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"
-            | Hello, @#{session.currentUser.twitterUsername}
-            span.caret
-          ul.dropdown-menu
-            li
-              link-to 'me' | Me
-            li
-              a click="logout" Logout
-      else
+          link-to 'privacy' | Privacy
         li
-          a click="signInViaTwitter" Login
-      li
-        link-to 'privacy' | Privacy
-      li
-        link-to 'about' | About
+          link-to 'about' | About
 .container-fluid        
 	== outlet
 	== partial "footer"
