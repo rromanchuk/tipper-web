@@ -5,6 +5,11 @@ NavigationHeaderComponent = Ember.Component.extend(
   classNames: ['navbar', 'navbar-default', 'tipper-nav']
   classNameBindings: ['hideBranding']
   hideBranding: true
+  actions:
+    signInViaTwitter: ->
+      console.log "signInViaTwitter"
+      #@toggleProperty("isAutomaticTippingEnabled")
+      @sendAction('signInViaTwitter')
 
 )
 
