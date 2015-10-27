@@ -61,10 +61,6 @@ body {
   }
 }
 
-.navbar.hide-branding .navbar-brand {
-  visibility: hidden;
-}
-
 .navbar .navbar-brand, .navbar .nav > li > a {
   /* About: */
   font-size: 20px;
@@ -84,7 +80,7 @@ body {
 
 .header {
   color: white;
-  min-height: 286px;
+  min-height: 270px;
   background-color: rgba(109,186,148, 0.75);
   .header-text {
     margin-bottom: 20px;
