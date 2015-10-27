@@ -1,7 +1,9 @@
 `import Ember from 'ember'`
 
 NavigationHeaderComponent = Ember.Component.extend(
-  classNameBindings: ['compact'],
+  classNameBindings: ['isCompact']
+  isCompact: true
+  
 )
 
 `export default NavigationHeaderComponent`
