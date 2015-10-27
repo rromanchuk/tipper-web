@@ -1,28 +1,26 @@
-== navigation-header hideBranding=false
-.container-fluid
-  .row
-    .col-lg-6.center-block.transaction-card
-      .row
-        .col-lg-10.center-block
-          .section.tip-details
-            h3
-              img.img-circle src=model.fromUser.profileImage
-              span.user #{model.fromTwitterUsername} tipped 
-              span.coiner a
-              span = model.transaction.tipAmountUbtc
-              span  (#{model.transaction.tipAmount} BTC)
-              img.img-circle src=model.toUser.profileImage
-              span.user #{model.toTwitterUsername}
-            dl
-              dt #{model.fromTwitterUsername}'s balance:
-              dd #{model.fromUser.bitcoinBalanceBtc}
-              dt #{model.toTwitterUsername}'s balance:
-              dd #{model.toUser.bitcoinBalanceBtc}
-          .section.trigger
-            == tweet-embed tweetId=model.objectId
-          .section
-            h3 Transaction information
-            == blockchain-data blockchainData=model.transaction
+.row
+  .col-lg-6.center-block.transaction-card
+    .row
+      .col-lg-10.center-block
+        .section.tip-details
+          h3
+            img.img-circle src=model.fromUser.profileImage
+            span.user #{model.fromTwitterUsername} tipped 
+            span.coiner a
+            span = model.transaction.tipAmountUbtc
+            span  (#{model.transaction.tipAmount} BTC)
+            img.img-circle src=model.toUser.profileImage
+            span.user #{model.toTwitterUsername}
+          dl
+            dt #{model.fromTwitterUsername}'s balance:
+            dd #{model.fromUser.bitcoinBalanceBtc}
+            dt #{model.toTwitterUsername}'s balance:
+            dd #{model.toUser.bitcoinBalanceBtc}
+        .section.trigger
+          == tweet-embed tweetId=model.objectId
+        .section
+          h3 Transaction information
+          == blockchain-data blockchainData=model.transaction
 
 
   == outlet
