@@ -1,52 +1,60 @@
-== navigation-header
+== navigation-header hideBranding=false
+
+
 .container-fluid
   .row
     .col-lg-12.card-flat
       .row
-        .col-lg-6.center-block
-          p Tipper is a companion app for Twitter, allowing any Twitter user to sign up and immediately start attaching Micro Payments to their Twitter Favorites.
+        .col-lg-8.center-block
+/           / p Tipper is a companion app for Twitter, allowing any Twitter user to sign up and immediately start attaching Micro Payments to their Twitter Favorites.
 
-          p Every time you Favorite a Tweet, Tipper sends a Micro Payment from your wallet to a new wallet associated with the author of that Tweet.
-          img src="assets/images/bit-fare.png"
-          p Decentralized Micro Payments are only possible with the help of the Bitcoin network, and Tipper helps new users understand and leverage this network with a fun and simple iOS application. 
-
-          h1 Micro Payments as a Platform
-          p We have built a robust and secure financial transaction system on Bitcoin protocol that allows any entity to send tiny amounts of currency (think 1 or 2 cents) when pre-configured digital events are triggered by user actions. Tipper is the first prototype built on top of our platform, designed to target a niche user base and gain traction on the back of Twitter's graph exposure.
-          img src="assets/images/about-tipper-graph.png"
-
-          h1 Future Platform Applications
-          p Facilitating capital exchanges between entities in an automated and frictionless way will give rise to new payment relationships. 
-          p Consider the non-monetary costs consumers incur for advertiser-subsidized (read: nearly all) content on the web. Consumers pay with attention, quality of experience and personal data for advertisers to embed disruptive messaging and tracking within "free" content.
-          p But paid content models have been tried in the past, why should anything change? Two reasons:
-          p 1. Trustless Transactions
-          p The development of 'blockchain' technology - a constantly growing and counterfeit/hack-proof record (stored by millions of computers worldwide) - allows one entity to exchange capital with any other entity without the need for both parties to opt-in to a central source of trust.
-          p 2. Mobile Browser Ad Blocking
-          p The recent ability to recognize and "block" display advertising at the client level (Safari) on iOS means consumers are able to transact (read: block ads) with publishers automatically, rather than opting in on a per-publisher basis.  
+/           / p Every time you Favorite a Tweet, Tipper sends a Micro Payment from your wallet to a new wallet associated with the author of that Tweet.
+/           / img src="assets/images/bit-fare.png"
+/           / p Decentralized Micro Payments are only possible with the help of the Bitcoin network, and Tipper helps new users understand and leverage this network with a fun and simple iOS application. 
 
 
-          h1 Publisher Monetization is Invisible
-          p Publishers monetize with advertising because consumers don't have to do any heavy lifting. This black-box model is easy for consumers: let the publishers and advertisers sort everything out, just let me click links and read content.
-          p Let's step back for a second and look at why paid-content models have been ineffective on the web:
-          p A. Closed systems for one publisher. The explosion of publishing sources has eradicated the consumer value of subscription models. 
-          p B. Paywalls? Ain't nobody got time for that! Monetary costs aside, the time and effort required to set up a payment relationship with an individual publisher just doesn't make sense in today's speedy web environment. 
-          p The success of the monetization model is dependent on non-monetary costs for the consumer. The lowest point of friction wins.
+/           / h1 Micro Payments as a Platform
+/           / p We have built a robust and secure financial transaction system on Bitcoin protocol that allows any entity to send tiny amounts of currency (think 1 or 2 cents) when pre-configured digital events are triggered by user actions. Tipper is the first prototype built on top of our platform, designed to target a niche user base and gain traction on the back of Twitter's graph exposure.
+/           / img src="assets/images/about-tipper-graph.png"
 
-          h1 A Frictionless Direct Model
-          p Combining Trustless payments with Mobile Ad blocking is an opportunity to introduce a direct model between consumers and publishers that eliminates many of the most troublesome non-monetary consumer costs. 
-          p How it would work:
-          ol
-          	li Consumer visits publisher site in Safari browser on iOS.
-          	li Installed ad-blocking software recognizes ad against maintained database.
-			li Ads are blocked from publisher, downloading less data, eliminating ad tracking, and de-cluttering the visual experience.
-			li A Micro transaction is executed whereby the consumer's account is debited and payment is sent to a wallet accessible only by the publishing party.
+          
 
-		  h1 Profitable Economics
-		  p Assuming a first-world consumer can stomach ~1¢ per ad blocked for an improved experience (less cluttered experience, less data downloaded, less user tracking), publishers are in a position to monetize at roughly 10x what they can earn from an advertising partner for displaying an ad to that unique user. 
-		  p Why this would work:
-		  ol
-		  	li Ad-blocking software is already in use today, much to the chagrin of publishers. The amount of consumers using this software is small enough today for publishers to ignore, but this adoption could greatly increase with new incentives.
-			li Many consumers feel conflicted about the use of ad-blocking software (as they should) because publishers need compensation to develop consumable product.
-			li Adoption of compensatory ad-blocking software is attractive to consumers who are worried about these moral implications.
-			li Adoption of compensatory ad-blocking software is attractive to publishers if we can demonstrate a 10x monetization per unique user. This would encourage publishers to promote this model and spur growth in network effects beyond general consumer interest.  
-		  p The world is changing. Capital transactions are becoming more liquid, and with that the potential for automation and micro payments leads us to a world where we replace annoying non-monetary costs with trivial monetary costs. The technological innovations mentioned above make this concept applicable to display advertising for the first time.
-		  p Large and stagnant industries such as digital advertising are notoriously difficult to disrupt, however, we have a solution that we think is at least 10x better than the current model. This is a big idea, but we think it's also an inevitable idea. Help us move consumers and publishers into a better, more harmonious future. 
+/           / h1 Future Platform Applications
+/           / p 
+/           / 	| Facilitating capital exchanges between entities in an automated and frictionless way will give rise to new payment relationships. 
+/           / p 
+/           / 	| Consider the non-monetary costs consumers incur for advertiser-subsidized (read: nearly all) content on the web. Consumers pay with attention, quality of experience and personal data for advertisers to embed disruptive messaging and tracking within "free" content.
+/           / p But paid content models have been tried in the past, why should anything change? Two reasons:
+/           / p 1. Trustless Transactions
+/           / p The development of 'blockchain' technology - a constantly growing and counterfeit/hack-proof record (stored by millions of computers worldwide) - allows one entity to exchange capital with any other entity without the need for both parties to opt-in to a central source of trust.
+/           / p 2. Mobile Browser Ad Blocking
+/           / p 
+/           / 	| The recent ability to recognize and "block" display advertising at the client level (Safari) on iOS means consumers are able to transact (read: block ads) with publishers automatically, rather than opting in on a per-publisher basis.  
+
+
+/    /        h1 Publisher Monetization is Invisible
+/    /        p Publishers monetize with advertising because consumers don't have to do any heavy lifting. This black-box model is easy for consumers: let the publishers and advertisers sort everything out, just let me click links and read content.
+/    /        p Let's step back for a second and look at why paid-content models have been ineffective on the web:
+/    /        p A. Closed systems for one publisher. The explosion of publishing sources has eradicated the consumer value of subscription models. 
+/    /        p B. Paywalls? Ain't nobody got time for that! Monetary costs aside, the time and effort required to set up a payment relationship with an individual publisher just doesn't make sense in today's speedy web environment. 
+/    /        p The success of the monetization model is dependent on non-monetary costs for the consumer. The lowest point of friction wins.
+
+/    /        h1 A Frictionless Direct Model
+/    /        p Combining Trustless payments with Mobile Ad blocking is an opportunity to introduce a direct model between consumers and publishers that eliminates many of the most troublesome non-monetary consumer costs. 
+/    /        p How it would work:
+/    /        ol
+/    /        	li Consumer visits publisher site in Safari browser on iOS.
+/    /        	li Installed ad-blocking software recognizes ad against maintained database.
+/ 			/ li Ads are blocked from publisher, downloading less data, eliminating ad tracking, and de-cluttering the visual experience.
+/ 			/ li A Micro transaction is executed whereby the consumer's account is debited and payment is sent to a wallet accessible only by the publishing party.
+
+/ 		 /  h1 Profitable Economics
+/ 		 /  p Assuming a first-world consumer can stomach ~1¢ per ad blocked for an improved experience (less cluttered experience, less data downloaded, less user tracking), publishers are in a position to monetize at roughly 10x what they can earn from an advertising partner for displaying an ad to that unique user. 
+/ 		 /  p Why this would work:
+/ 		 /  ol
+/ 		 /  	li Ad-blocking software is already in use today, much to the chagrin of publishers. The amount of consumers using this software is small enough today for publishers to ignore, but this adoption could greatly increase with new incentives.
+/ 			/ li Many consumers feel conflicted about the use of ad-blocking software (as they should) because publishers need compensation to develop consumable product.
+/ 			/ li Adoption of compensatory ad-blocking software is attractive to consumers who are worried about these moral implications.
+/ 			/ li Adoption of compensatory ad-blocking software is attractive to publishers if we can demonstrate a 10x monetization per unique user. This would encourage publishers to promote this model and spur growth in network effects beyond general consumer interest.  
+/ 		 /  p The world is changing. Capital transactions are becoming more liquid, and with that the potential for automation and micro payments leads us to a world where we replace annoying non-monetary costs with trivial monetary costs. The technological innovations mentioned above make this concept applicable to display advertising for the first time.
+/ 		 /  p Large and stagnant industries such as digital advertising are notoriously difficult to disrupt, however, we have a solution that we think is at least 10x better than the current model. This is a big idea, but we think it's also an inevitable idea. Help us move consumers and publishers into a better, more harmonious future. 
