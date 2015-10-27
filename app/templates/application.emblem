@@ -6,7 +6,8 @@ nav.navbar.navbar-default.tipper-nav
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      link-to 'index' class="navbar-brand" | tipper
+      link-to 'index' class="navbar-brand" 
+        img src="assets/images/tipper-logo-header.png" width="50" height="50"| tipper
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         if session.isWorking
@@ -27,6 +28,8 @@ nav.navbar.navbar-default.tipper-nav
             a click="signInViaTwitter" Login
         li
           link-to 'privacy' | Privacy
+        li
+          link-to 'about' | About
 .container-fluid
   == outlet
   == partial "footer"
