@@ -6,9 +6,9 @@ nav.navbar.navbar-default.tipper-nav
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      link-to 'index' class="navbar-brand" 
+      link-to 'index' class="navbar-brand visible-xs-block"
         img src="assets/images/tipper-logo-header.png" width="50" height="50" 
-        | tipper
+      p.navbar-text.visible-lg-block tipper
     #navbar.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         if session.isWorking
