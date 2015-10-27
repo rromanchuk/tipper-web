@@ -29,8 +29,8 @@ nav.navbar.navbar-default.tipper-nav
             a click="signInViaTwitter" Login
         li
           link-to 'privacy' | Privacy
-        li
-          link-to 'about' | About
+        / li
+        /   link-to 'about' | About
 .container-fluid        
 	== outlet
 	== partial "footer"
