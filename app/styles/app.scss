@@ -61,6 +61,10 @@ body {
   }
 }
 
+.navbar-header .is-compact .navbar-brand {
+  visibility: hidden;
+}
+
 .navbar .navbar-brand, .navbar .nav > li > a {
   /* About: */
   font-size: 20px;
