@@ -11,11 +11,11 @@
             span  (#{model.transaction.tipAmount} BTC)
             img.img-circle src=model.toUser.profileImage
             span.user #{model.toTwitterUsername}
-          dl
-            dt #{model.fromTwitterUsername}'s balance:
-            dd #{model.fromUser.bitcoinBalanceBtc}
-            dt #{model.toTwitterUsername}'s balance:
-            dd #{model.toUser.bitcoinBalanceBtc}
+          / dl
+          /   dt #{model.fromTwitterUsername}'s balance:
+          /   dd #{model.fromUser.bitcoinBalanceBtc}
+          /   dt #{model.toTwitterUsername}'s balance:
+          /   dd #{model.toUser.bitcoinBalanceBtc}
         .section.trigger
           == tweet-embed tweetId=model.objectId
         .section
