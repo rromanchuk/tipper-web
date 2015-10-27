@@ -1,4 +1,4 @@
-== navigation-header isCompact=true
+== navigation-header isCompact=false
 .container-fluid
   == compact-header sendSms="sendSms" sendTo=model.sms.to
   .row
