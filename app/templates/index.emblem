@@ -1,5 +1,4 @@
-== navigation-header
-
+== navigation-header hideBranding=true
 
 .container-fluid
   == full-header sendSms="sendSms" sendTo=model.sms.to
