@@ -1,0 +1,28 @@
+p Tipper is a companion app for Twitter, allowing any Twitter user to sign up and immediately start attaching Micro Payments to their Twitter Favorites.
+
+p Every time you Favorite a Tweet, Tipper sends a Micro Payment from your wallet to a new wallet associated with the author of that Tweet.
+
+p Decentralized Micro Payments are only possible with the help of the Bitcoin network, and Tipper helps new users understand and leverage this network with a fun and simple iOS application. 
+
+h1 Micro Payments as a Platform
+p We have built a robust and secure financial transaction system on Bitcoin protocol that allows any entity to send tiny amounts of currency (think 1 or 2 cents) when pre-configured digital events are triggered by user actions. Tipper is the first prototype built on top of our platform, designed to target a niche user base and gain traction on the back of Twitter's graph exposure.
+
+h1 Future Platform Applications
+p Facilitating capital exchanges between entities in an automated and frictionless way will give rise to new payment relationships. 
+img src="assets/images/about-tipper-graph.png"
+p Consider the non-monetary costs consumers incur for advertiser-subsidized (read: nearly all) content on the web. Consumers pay with attention, quality of experience and personal data for advertisers to embed disruptive messaging and tracking within "free" content.
+
+p But paid content models have been tried in the past, why should anything change? Two reasons:
+
+1. Trustless Transactions
+
+/ The development of 'blockchain' technology - a constantly growing and counterfeit/hack-proof record (stored by millions of computers worldwide) - allows one entity to exchange capital with any other entity without the need for both parties to opt-in to a central source of trust.
+
+/ 2. Mobile Browser Ad Blocking
+
+/ The recent ability to recognize and "block" display advertising at the client level (Safari) on iOS means consumers are able to transact (read: block ads) with publishers automatically, rather than opting in on a per-publisher basis.  
+
+
+h1 Publisher Monetization is Invisible
+p Publishers monetize with advertising because consumers don't have to do any heavy lifting. This black-box model is easy for consumers: let the publishers and advertisers sort everything out, just let me click links and read content.
+p Let's step back for a second and look at why paid-content models have been ineffective on the web:
