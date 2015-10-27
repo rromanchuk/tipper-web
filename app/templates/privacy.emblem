@@ -1,8 +1,8 @@
 == compact-header sendSms="sendSms" sendTo=model.sms.to
 .row
-  .col-lg-12
+  .col-lg-12.card-flat
     .row
-      .col-lg-6.center-block.card
+      .col-lg-6.center-block
         h1 Privacy Policy
         p Last updated: August 26, 2015
         p Tipper ("us", "we", or "our") operates the https://www.trytipper.com website (the "Service").
