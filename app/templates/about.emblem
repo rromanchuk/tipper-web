@@ -34,10 +34,10 @@
             li Ads are blocked from publisher, downloading less data, eliminating ad tracking, and de-cluttering the visual experience.
             li A Micro transaction is executed whereby the consumer's account is debited and payment is sent to a wallet accessible only by the publishing party.
                 h1 Profitable Economics
-      p Assuming a first-world consumer can stomach ~1¢ per ad blocked for an improved experience (less cluttered experience, less data downloaded, less user tracking), publishers are in a position to monetize at roughly 10x what they can earn from an advertising partner for displaying an ad to that unique user. 
-      p Why this would work:
-      ol
-        li Ad-blocking software is already in use today, much to the chagrin of publishers. The amount of consumers using this software is small enough today for publishers to ignore, but this adoption could greatly increase with new incentives.
-        li Many consumers feel conflicted about the use of ad-blocking software (as they should) because publishers need compensation to develop consumable product.
-        li Adoption of compensatory ad-blocking software is attractive to consumers who are worried about these moral implications.
-        li Adoption of compensatory ad-blocking software is attractive to publishers if we can demonstrate a 10x monetization per unique user. This would encourage publishers to promote this model and spur growth in network effects beyond general consumer interest.  
+          p Assuming a first-world consumer can stomach ~1¢ per ad blocked for an improved experience (less cluttered experience, less data downloaded, less user tracking), publishers are in a position to monetize at roughly 10x what they can earn from an advertising partner for displaying an ad to that unique user. 
+          p Why this would work:
+          ol
+            li Ad-blocking software is already in use today, much to the chagrin of publishers. The amount of consumers using this software is small enough today for publishers to ignore, but this adoption could greatly increase with new incentives.
+            li Many consumers feel conflicted about the use of ad-blocking software (as they should) because publishers need compensation to develop consumable product.
+            li Adoption of compensatory ad-blocking software is attractive to consumers who are worried about these moral implications.
+            li Adoption of compensatory ad-blocking software is attractive to publishers if we can demonstrate a 10x monetization per unique user. This would encourage publishers to promote this model and spur growth in network effects beyond general consumer interest.  
