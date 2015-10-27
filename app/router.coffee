@@ -11,6 +11,7 @@ Router.map ->
   @resource 'transaction', path: 'transaction/:transaction_id', ->
 
   @route 'privacy'
+  @route 'about'
   @route 'login'
   @route 'me'
 
