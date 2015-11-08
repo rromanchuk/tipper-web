@@ -1,5 +1,5 @@
 .row
-  .col-lg-6.center-block.transaction-card
+  .col-lg-6.col-xs-11.center-block.transaction-card
     .row
       .col-lg-10.center-block
         .section.tip-details
