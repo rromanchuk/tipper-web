@@ -31,7 +31,9 @@ nav.navbar.navbar-default.tipper-nav
           link-to 'privacy' | Privacy
         / li
         /   link-to 'about' | About
-.container-fluid        
+.container-fluid
+  if isHome
+    p HOME        
 	== outlet
 	== partial "footer"
 

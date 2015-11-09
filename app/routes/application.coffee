@@ -33,7 +33,7 @@ ApplicationRoute = Ember.Route.extend(
       @get('session').close()
       return
     renderTemplate: ->
-      console.log @get('currentPath')
+      console.log "ApplicationRoute::renderTemplate"
       @render('application')
 )
 
