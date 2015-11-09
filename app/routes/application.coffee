@@ -32,6 +32,9 @@ ApplicationRoute = Ember.Route.extend(
     logout: ->
       @get('session').close()
       return
+    renderTemplate: ->
+      console.log @get('currentPath')
+      @render('application')
 )
 
 `export default ApplicationRoute`
