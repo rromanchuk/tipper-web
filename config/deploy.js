@@ -55,8 +55,8 @@ module.exports = function(deployTarget) {
 
     ENV.redis = {
       allowOverwrite: true,
-      //host: 'localhost',
-      //port: process.env['REDIS_PORT']
+      //host: process.env['REDIS_HOST'],
+      port: process.env['REDIS_PORT']
     };
     ENV.s3 = {
       accessKeyId: process.env['AWS_ACCESS_KEY'],

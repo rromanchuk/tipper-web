@@ -8,7 +8,8 @@
             span.user #{model.fromTwitterUsername} tipped 
             span.coiner a
             span = model.transaction.tipAmountUbtc
-            img src="assets/images/arrow.png"
+            span
+              img src="assets/images/arrow.png"
             img.img-circle src=model.toUser.profileImage
             span.user #{model.toTwitterUsername}
           / dl
