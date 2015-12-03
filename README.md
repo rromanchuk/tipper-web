@@ -1,4 +1,12 @@
 ## Deploying web
+Currently the website is served by a rails app using the "Lightening Strategy" http://ember-cli.com/ember-cli-deploy/docs/v0.5.x/lightning-strategy-examples/ This pushes all of the assets to s3, and then pushes the index page to redis. During a request, rails then fetches the current release from redis and renders the index page. 
+
+
+
+To push to production run:
+Configure your production environment and `cp .env.deploy.production.example .env.deploy.production`, asking me for any required credentials. 
+
+Then run:
 `ember deploy production`
 
 ## Resources
