@@ -1,61 +1,51 @@
-module.exports = {
-  development: {
-    buildEnv: 'development', // Override the environment passed to the ember asset build. Defaults to 'production'
-    store: {
-      type: 'redis', // the default store is 'redis'
-      host: 'localhost',
-      port: 6379
+/* jshint node: true */
+
+module.exports = function(deployTarget) {
+  var ENV = {
+    build: {},
+    'redis': {
+        host: "localhost",
+        port:  49156
     },
-    assets: {
-      type: 's3', // default asset-adapter is 's3'
-      gzip: false, // if undefined or set to true, files are gziped
-      gzipExtensions: ['js', 'css', 'svg'], // if undefined, js, css & svg files are gziped
-      exclude: ['.DS_Store', '*-test.js'], // defaults to empty array
-      accessKeyId: 'AKIAJ5C5NX4CZVSQOYKQ',
-      secretAccessKey: process.env['AWS_ACCESS_KEY'],
-      bucket: 'tipperapp'
-    }
-  },
-
-  // staging: {
-  //   buildEnv: 'staging', // Override the environment passed to the ember asset build. Defaults to 'production'
-  //   store: {
-  //     type: "S3",
-  //     accessKeyId: "AKIAJ5C5NX4CZVSQOYKQ",
-  //     secretAccessKey: process.env['AWS_ACCESS_KEY'],
-  //     bucket: "downloadtipper.com",
-  //     acl: 'public-read', //optional, e.g. 'public-read', if ACL is not configured, it is not sent
-  //     hostName: "downloadtipper.com.s3-website-us-east-1.amazonaws.com", // To be set with 'direct' indexMode
-  //     indexMode: "direct" // Optional: 'direct' or 'indirect', 'direct' is used by default.
-  //   },
-  //   assets: {
-  //     accessKeyId: 'AKIAJ5C5NX4CZVSQOYKQ',
-  //     secretAccessKey: process.env['AWS_ACCESS_KEY'],
-  //     bucket: 'downloadtipper.com'
-  //   },
-  //   manifestPrefix: 'stage-app' // optional, defaults to this.project.name()
-  // },
-
-   production: {
-    store: {
-      type: 'redis',
-      ssh: {
-        username: 'ec2-user',
-        privateKey: '/Users/ryan/rromanchuk-feb.pem',
-        dstPort: 6379, // redis port
-        dstHost: 'tipper.7z2sws.0001.use1.cache.amazonaws.com', // redis host
-        username: 'ec2-user',
-        host: '54.173.214.35',
-        port: 22
+      'ssh-tunnel': {
+        username:       "ec2-user",
+        host:           "54.173.214.35",
+        srcPort:        49156,
+        dstHost:        "tipper.7z2sws.0001.use1.cache.amazonaws.com",
+        privateKeyPath: "/Users/ryan/rromanchuk-feb.pem"
       }
-    },
-    assets: {
-      type: 's3',
-      gzipExtensions: ['js', 'css', 'svg', 'txt'],
-      accessKeyId: 'AKIAJ5C5NX4CZVSQOYKQ',
-      secretAccessKey: process.env['AWS_ACCESS_KEY'],
-      bucket: 'tipper-assets',
-      exclude: ['.DS_Store']
-    }
+    // include other plugin configuration that applies to all deploy targets here
+  };
+
+  if (deployTarget === 'development') {
+    ENV.build.environment = 'development';
+    // configure other plugins for development deploy target here
   }
+
+  if (deployTarget === 'staging') {
+    ENV.build.environment = 'production';
+    // configure other plugins for staging deploy target here
+  }
+
+  if (deployTarget === 'production') {
+    ENV.build.environment = 'production';
+    // ENV.redis = {
+    //   'redis': {
+    //     host: "localhost",
+    //     port:  49156
+    //   },
+    //   'ssh-tunnel': {
+    //     username:       "ec2-user",
+    //     host:           "54.173.214.35"
+    //     srcPort:        49156,
+    //     dstHost:        "tipper.7z2sws.0001.use1.cache.amazonaws.com"
+    //   }
+    // }
+    // configure other plugins for production deploy target here
+  }
+
+  // Note: if you need to build some configuration asynchronously, you can return
+  // a promise that resolves with the ENV object instead of returning the
+  // ENV object synchronously.
+  return ENV;
 };
