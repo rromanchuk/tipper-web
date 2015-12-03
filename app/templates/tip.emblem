@@ -8,15 +8,9 @@
             span.user #{model.fromTwitterUsername} tipped 
             span.coiner a
             span = model.transaction.tipAmountUbtc
-            span
-              img src="assets/images/arrow.png"
+            img.arrow src="assets/images/arrow.png"
             img.img-circle src=model.toUser.profileImage
             span.user #{model.toTwitterUsername}
-          / dl
-          /   dt #{model.fromTwitterUsername}'s balance:
-          /   dd #{model.fromUser.bitcoinBalanceBtc}
-          /   dt #{model.toTwitterUsername}'s balance:
-          /   dd #{model.toUser.bitcoinBalanceBtc}
         .section.trigger
           == tweet-embed tweetId=model.objectId
         .section
