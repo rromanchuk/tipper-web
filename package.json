@@ -31,7 +31,6 @@
     "ember-cli-deploy": "0.5.1",
     "ember-cli-deploy-build": "0.1.0",
     "ember-cli-deploy-lightning-pack": "0.2.0",
-    "ember-cli-deploy-redis": "0.1.0",
     "ember-cli-deploy-ssh-tunnel": "0.2.0",
     "ember-cli-dotenv": "^1.0.4",
     "ember-cli-emblem": "^0.3.1",
