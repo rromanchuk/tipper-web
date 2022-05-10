@@ -3,10 +3,10 @@
 HappyfoxChatComponent = Ember.Component.extend(
   didInsertElement: ->
     window.HFCHAT_CONFIG =
-      EMBED_TOKEN: '***REMOVED***'
-      ACCESS_TOKEN: '***REMOVED***'
+      EMBED_TOKEN: ''
+      ACCESS_TOKEN: ''
       HOST_URL: 'https://www.happyfoxchat.com'
-      ASSETS_URL: 'https://***REMOVED***/visitor'
+      ASSETS_URL: ''
     do ->
       scriptTag = document.createElement('script')
       scriptTag.type = 'text/javascript'

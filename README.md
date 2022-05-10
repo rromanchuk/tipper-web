@@ -2,10 +2,10 @@
 
 Abandoned 2015 project with [tipper-ios](https://github.com/rromanchuk/tipper-ios), [tipper-web](https://github.com/rromanchuk/tipper-web), and [tipper](https://github.com/rromanchuk/tipper)
 
-![TIPPER1](/tipper-1.png)
-![TIPPER2](/tipper-2.png)
-![TIPPER3](/tipper-3.png)
-![TIPPER4](/tipper-4.png)
+![TIPPER Web 1](/tipper-web1.png)
+![TIPPER Web 2](/tipper-web2.png)
+![TIPPER Web 3](/tipper-web3.png)
+![TIPPER Web 4](/tipper-web4.png)
 
 ## Deploying web
 Currently the website is served by a rails app using the "Lightening Strategy" http://ember-cli.com/ember-cli-deploy/docs/v0.5.x/lightning-strategy-examples/ This pushes all of the assets to s3, and then pushes the index page to redis. During a request, rails then fetches the current release from redis and renders the index page. 
